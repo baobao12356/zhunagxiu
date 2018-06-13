@@ -1,0 +1,27 @@
+.caseItem{
+  background: #fff !important;
+  .casePic{
+    width: 100%;
+    height: 400px;
+    background-size: cover !important;
+    overflow: hidden;
+  }
+  .caseTitle{
+    font-size: 34px;
+    font-family: "PingFang SC-Medium";
+    padding:0 40px;
+    margin-top: 28px;
+  }
+  .desc{
+    color:#999;
+    margin: 16px 0 50px;
+    display: flex;
+    flex-direction: row;
+    padding:0 40px;
+    >span{
+      margin: 0 5px !important;
+    }
+  }
+
+
+}

@@ -1,0 +1,25 @@
+.IMbtn{
+  background-color: #439df7;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  >div{
+    display: inline-block;
+    i{
+      display: inline-block;
+      position: relative;
+      width: 48px;
+      height: 40px;
+      background: url("./img/Chat@2x.png") center no-repeat;
+      background-size: 100%;
+      top:8px;
+      margin-right: 38px;
+      margin-left: 21px;
+
+    }
+  }
+}

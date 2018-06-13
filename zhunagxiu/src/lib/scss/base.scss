@@ -1,0 +1,29 @@
+@import "_var.scss";
+@import "_fn.scss";
+@import "_reset.scss";
+
+/*
+.am-toast {
+  width: 100vw;
+
+  .am-toast-notice {
+    max-width: 90%;
+
+    .am-toast-text {
+      min-width: 3.5rem;
+    }
+  }
+}
+*/
+
+.am-toast {
+  span {
+    display: block;
+    //width: 90%;
+    max-width: 90%;
+  }
+
+  .am-toast-notice {
+    margin: 0 auto;
+  }
+}

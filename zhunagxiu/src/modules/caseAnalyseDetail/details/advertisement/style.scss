@@ -1,0 +1,21 @@
+.Advertisement{
+  margin: 16px 0 100px 0;
+padding: 32px;
+  .advertTtile{
+    display: flex;
+    justify-content:space-between;
+    flex:1;
+    clear: both;
+  }
+  .adverImg{
+    margin-top: 32px;
+    width: 100%;
+    height: 260px;
+    >img{
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+
+}

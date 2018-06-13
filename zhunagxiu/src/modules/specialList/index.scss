@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+html,body{
+  height: 100%;
+  background: #FFF;
+}
+#application{
+  height: 100%;
+  >div{
+    height: 100%;
+  }
+}
+
+nav{
+  width: 100%;
+  padding: 20px;
+  background: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11111;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100px;
+  img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.swiper-container{
+  height: 100%;
+  margin:0 auto;
+  background: #FFF;
+}
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  //&:last-child{
+  //  overflow: scroll;
+  //  height: 667px;
+  //}
+}
+.swiperOut{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y:scroll;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+.middle{
+  overflow-y:scroll;
+  -webkit-overflow-scrolling : touch;
+  height: 100%;
+}
+.swiperIn{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.swiper-scrollbar{
+  opacity: 0;
+}
+.swiper-scrollbar-drag{
+  height: 532.742px;
+}
+
+
+
+
+
+.swiper-container-scrollbar .swiper-slide{
+  //height: auto;
+}
+
+.mask{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 750px;
+  height: 642px;
+}
+.fixed{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 40px;
+  width: 670px;
+  .title{
+    font-size: 52px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .descripetion{
+    font-size: 28px;
+    color: #FFFFFF;
+    line-height: 42px;
+    border-bottom: 1px solid rgba(241,241,241,.75);
+    padding-bottom: 30px;
+  }
+  .nextTit{
+    font-size: 28px;
+    color: #999999;
+    padding: 30px 0;
+    position: relative;
+    img{
+      width: 28px;
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: 43px;
+    }
+  }
+}
+.next{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2222;
+}
+.navBack{
+  position: fixed;
+  top:0;
+  left: 0;
+  background: red;
+  height: 106px;
+  width: 100%;
+}
+.zhan{
+  height: 11%;
+}
+.allList{
+  //border-top: 6px solid #F1F1F1;
+  //padding-top: 30px;
+  height: 89%;
+  //height: 1184px;
+  &:first-child{
+    //border-top:none;
+    //padding: 11% 0 0;
+  }
+  //padding: 172px 0 0;
+}
+.noDesigner{
+  height: 100%;
+}
+.articleList{
+  background-color: transparent;
+  text-align: justify;
+  //height: 40%;
+  overflow: hidden;
+  position: relative;
+  //margin-bottom: 76px;
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling : touch;
+  .maskMore{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index:222;
+    width: 100%;
+    height: 98px;
+    img{
+      width: 100%;
+      height: 98px;
+    }
+  }
+  >p{
+    padding: 0 40px;
+    font-size: 40px;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+  >img{
+    width: 100%;
+    height:auto;
+    margin:20px 0;
+  }
+  .articleDetail{
+    padding: 0 40px 30px;
+    font-size: 28px;
+    color: #666666;
+    line-height: 44px;
+    img{
+      margin: 40px 0;
+      width: 100%;
+      height: auto !important;
+    }
+    //p{
+    //  font-size: 28px;
+    //  color: #666666;
+    //  line-height: 44px;
+    //}
+  }
+}
+.noDesigner{
+  height: 100%;
+}
+.designer{
+  position: relative;
+  padding:0 40px 0;
+  .designerWord{
+    font-size: 28px;
+    color: #666666;
+    border-top: 1px solid rgba(224,224,224,.75);
+    padding: 38px 0;
+  }
+  .designerImg{
+    position: absolute;
+    right: 40px;
+    top: 28px;
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    span{
+      font-size: 28px;
+      color: #333333;
+      vertical-align: middle;
+      margin-left: 16px;
+      display: inline-block;
+    }
+
+  }
+}
+//.backW{
+//  &:{
+//    background-image: url(./imgs/wBack.png);
+//  }
+//}

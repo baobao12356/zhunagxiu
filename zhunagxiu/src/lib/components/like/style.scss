@@ -1,0 +1,50 @@
+@import "../../scss/minxi.scss";
+// .com-like {
+//   display: block;
+//   width: 80px;
+//   height: 80px;
+//   padding: 9px;
+//   position: relative;
+//   text-align: right;
+//   line-height: 62px;
+//   &:after {
+//     content: '';
+//     display: block;
+//     width: 62px;
+//     height: 62px;
+//     position:absolute;
+//     top: 50%;
+//     margin-top: -40px;
+//     background: url(img/01.png) 0 0 no-repeat;
+//     background-size: contain;
+//   }
+//   &.liked:after {
+//     background-image: url(img/02.png);
+//   }
+// }
+.com-like{
+  display: flex;
+  .com-like-img{
+    display: block;
+    width: 36px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-image: url('./img/bottom-like2@1x.png');
+  }
+  em{
+    padding-left:10px ;
+    font-family:SFNSDisplay-Regular;
+    font-size:24px;
+    line-height:24px;
+    text-align:left;
+  }
+  &.liked .com-like-img{
+    background-image: url('./img/bottom-liked2@1x.png');
+  }
+}
+
+
+
+

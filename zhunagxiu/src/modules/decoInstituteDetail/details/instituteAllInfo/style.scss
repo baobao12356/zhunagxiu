@@ -1,0 +1,183 @@
+.designers{
+  >div {
+    width: 100%;
+    &:nth-of-type(1) {
+      padding-top: 40px;
+      padding-bottom: 28px;
+      font-size: 28px;
+      padding-left: 70px;
+      .instituteInfoTab{
+        width: 184px;
+        display: inline-block;
+        color:#999999;
+        span{
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        i{
+          display: inline-block;
+          width:20px;
+          height:4px;
+        }
+
+      }
+      .infoOn {
+        color: #333333;
+        i {
+          background: #333333;
+        }
+      }
+    }
+    &:nth-of-type(2){
+      width: 100%;
+      padding-bottom: 100px;
+    }
+    .infoDesigners{
+      padding-bottom: 40px;
+      margin-left: -28px;
+      width: 750px;
+      width: 100vw;
+      padding-left: 24px;
+      .designerTab{
+        width: 100%;
+        height: 200px;
+        padding-top: 40px;
+        border-bottom:1px solid #e0e0e0;
+        >a{
+          height: 240px;
+          width: 244px;
+          >div{
+            float: left;
+          }
+          .designerIcon{
+            width: 120px;
+            display: inline-block;
+            >span{
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              background: #e4e4e4;
+              background-position: center;
+              background-size: cover;
+              display: inline-block;
+            }
+          }
+          .designerInfos{
+            display: inline-block;
+            margin-left: 30px;
+          }
+          .designerPrice{
+            float: right;
+            display: inline-block;
+            margin-top: 36px;
+            font-size:40px;
+            color:#333333;
+            line-height:52px;
+            margin-right: 28px;
+            text-align: right;
+            width: 200px;
+            >span{
+              font-size:24px;
+            }
+          }
+          .designerSale{
+          color:#ff454a;
+            >span{
+              color:#333333;
+            }
+          }
+          .designerPrices{
+            float: right;
+            width: 200px;
+
+          }
+          .designerOldPrice{
+            text-decoration:line-through;
+            color:#999;
+            font-size:24px;
+            float: right;
+            margin-right: 28px;
+            width: 200px;
+            text-align: right;
+          }
+          .designerName{
+            font-size: 34px;
+            color: #333333;
+            line-height: 62px;
+            width:270px;
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+          }
+          .designerWork{
+            display: none;
+            font-size:22px;
+            color:#666666;
+            line-height: 24px;
+          }
+        }
+        .designerStyleTab{
+          height: 64px;
+          margin-top: 20px;
+          >span{
+            font-size:24px;
+            color:#666;
+            letter-spacing: -2px;
+            &:after{
+              //font-size:6px;
+              content: '|';
+              margin:0 12px;
+              color:#999;
+            }
+            &:last-child{
+              &:after{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .infoIntro{
+      font-size:28px;
+      line-height:48px;
+      text-align:justify;
+      padding-bottom: 50px;
+      margin-left: 12px;
+      color:#666;
+      width: 670px;
+      padding-top: 0;
+      padding-right: 0;
+    }
+    .infoHonor{
+      padding-bottom: 50px;
+      font-size: 28px;
+      color:#666;
+      width: 688px;
+      line-height: 52px;
+      text-align: justify;
+      >div{
+        padding:0 0 0 24px;
+        width: 100%;
+        white-space:normal;
+        overflow: hidden;
+        i{
+          background:#666666;
+          width:8px;
+          height:8px;
+          display: inline-block;
+          float: left;
+          margin: 22px 16px 0 -12px;
+        }
+      }
+
+    }
+  }
+  .infoBlock{
+    display: none;
+  }
+  .infoBlockOn{
+    display: block;
+  }
+}

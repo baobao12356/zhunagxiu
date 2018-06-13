@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+
+  .pageInfo {
+    width: 100%;
+    //height: 100%;
+    height: 100vh;
+    //padding-top: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    &.ios-top {
+      padding-top: 124px;
+    }
+    .listInfo {
+      padding: 0 30px;
+      margin-bottom: 40px;
+      color: #ffffff;
+      margin-top: -20px;
+      &.android {
+        margin-top: -70px;
+      }
+      .listTitle {
+        font-family: PingFangSC-Medium;
+        font-size: 48px;
+        line-height: 68px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .listDesc {
+        height: 160px;
+        font-family: PingFangSC-Regular;
+        font-size: 26px;
+        line-height: 41px;
+        color: #e1e1e1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+    }
+    .articleSwiper {
+      overflow-x: hidden;
+      .articleList {
+        .articleItem {
+          width: 560px;
+          height: 700px;
+          padding: 40px 30px;
+          background-color: #ffffff;
+          border-radius: 4px;
+          margin-left: 30px;
+          box-sizing: border-box;
+          &:last-child {
+            margin-right: 30px;
+          }
+          .articleNum {
+            font-size: 34px;
+            color: #666666;
+            line-height: 48px;
+            margin-bottom: 16px;
+          }
+          .articleTitle {
+            height: 96px;
+            font-family: PingFangSC-Medium;
+            font-size: 34px;
+            line-height: 48px;
+            color: #333333;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+          }
+          .articleCover {
+            width: 500px;
+            height: 282px;
+            margin-bottom: 20px;
+            background-size: cover !important;
+            img {
+              border-radius: 4px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .articleDesc {
+            font-size: 28px;
+            line-height: 42px;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+  }
+}

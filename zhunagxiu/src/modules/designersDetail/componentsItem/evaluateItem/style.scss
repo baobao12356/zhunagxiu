@@ -1,0 +1,56 @@
+.evaluateItem{
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 30px;
+  font-family: PingFangSC-Regular;
+  padding: 0 40px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .user{
+    display: flex;
+    flex-direction: row;
+    .userInfo{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      justify-content: space-around;
+    }
+  }
+  .content{
+    margin: 40px 0 20px 0;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .evaluateTime,.userInfo>:nth-child(2){
+    color: #999;
+    font-size: 24px;
+  }
+  .evaluateTime{
+    margin-bottom: 40px;
+  }
+
+}
+
+
+.score{
+  display: flex;
+  align-items: center;
+  >span{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+  }
+  .star{
+    background: url("../../img/stars.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .halfStar{
+    background: url("../../img/halfStar.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,151 @@
+@import "../../scss/minxi.scss";
+.line{
+  background: #f5f5f5;
+  width: 100%;
+  height:16px;
+}
+.com-art-comment-list {
+  padding: 0 32px 40px;
+  background-color: #fff;
+
+  .title {
+    position: relative;
+    line-height: 3;
+    font-size: 32px;
+    color:#333;
+    text-indent: 20px;
+
+    span{
+      font-size: 24px;
+      color: #999;
+      padding-left:20px;
+    }
+
+    &:before{
+      position:absolute;
+      content: '';
+      display: block;
+      width: 6px;
+      height: 22px;
+      background-color:#333;
+      left: 0;
+      top: 38px;
+    }
+
+  }
+
+  .more{
+    text-align: center;
+    font-size: 32px;
+    color:#DFAF7D;
+    span{
+      position:relative;
+
+      &:after{
+        content: '';
+        display: block;
+        position:absolute;
+        top: 15px;
+        left: -40px;
+        width: 30px;
+        height: 30px;
+        background:url(./img/Rectangle@1x.png) no-repeat;
+        background-size:contain;
+      }
+    }
+  }
+
+  li {
+    padding: 40px 8px 40px;
+    position:relative;
+
+    .author-info {
+      display: flex;
+    }
+
+    .name {
+      // flex: 1 1 calc(100% - 80px);
+      padding-left: 32px;
+      width: 72%;
+    }
+
+    h4, p {
+      width: 100%;
+      @extend %tov;
+    }
+
+    h4 {
+      margin-bottom: 24px;
+      font-size: 30px;
+    }
+
+    p{
+      color: #999;
+      font-size: 24px;
+    }
+  }
+
+  .conmment-content {
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .com-default-user-content {
+    flex: 0 80px;
+    overflow: hidden;
+    img{
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .like-wrapper{
+    position: absolute;
+    top:40px;
+    right: 0;
+    .com-like{
+      line-height: 22px;
+    }
+
+    em{
+      color: #bcbcbc;
+    }
+
+    .com-like .com-like-img{
+      width: 24px;
+      height: 22px;
+      background:url(./img/comment-like@1x.png);
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+    .com-like.liked .com-like-img{
+      background:url(./img/comment-liked@1x.png);
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+  }
+
+  .comment-replybox{
+    background-color:#f9f9f9;
+    padding:20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    li{
+      padding:0;
+      font-size: 28px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    li:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+

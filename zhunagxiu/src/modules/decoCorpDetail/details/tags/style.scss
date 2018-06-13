@@ -1,0 +1,20 @@
+.tags{
+  display: inline-block;
+  >div{
+    border:1px solid #e4e4e4;
+    border-radius: 4px;
+    height: 33px;
+    margin-right: 18px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 24px;
+    color: #999999;
+    padding: 0 12px;
+
+  }
+  .hide{
+    display: none !important;
+  }
+}
+

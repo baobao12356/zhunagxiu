@@ -1,0 +1,96 @@
+.corpAllInfo{
+  padding-top: 16px;
+  padding-bottom: 34px;
+  padding-right: 28px;
+  .allInfoName{
+    width: 92.5333vw;
+    span{
+      &:nth-of-type(1){
+        display: inline-block;
+        width: 150px;
+        float: left;
+      }
+      &:nth-of-type(2){
+        display: inline-block;
+        width: 538px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  >div{
+    height: 78px;
+    padding: 24px 0;
+    color:#666;
+    font-size: 28px;
+    //width: 346px;
+    display: inline-block;
+    width: 92.5333vw;
+    &:nth-of-type(1){
+      padding-bottom: 12px;
+    }
+    span{
+      &:nth-of-type(1){
+        color:#999;
+      }
+    }
+    &:nth-of-type(2), &:nth-last-of-type(1){
+      width: 100%;
+      line-height: 44px;
+    }
+  }
+}
+
+.more{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  background: #fff;
+  &:after{
+    content: '';
+    width: 150px;
+    height: 28px;
+    background: url("../../img/moreWords.png");
+    background-size: cover !important;
+  }
+}
+
+.aboutUsBox{
+  max-height: 166px;
+  text-overflow: clip ;
+  display: -webkit-box;
+  -webkit-line-clamp:4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 44px;
+}
+#aboutUs{
+  display: none !important;
+  opacity: 0 !important;
+}
+
+#aboutUs:checked ~ .aboutUsBox{
+  height:auto !important;
+  max-height: 10000px !important;
+  text-overflow: clip ;
+  display: block;
+  -webkit-line-clamp:1000;
+  -webkit-box-orient: vertical;
+  overflow: auto !important;
+}
+
+#aboutUs:checked ~ .aboutUsBox+label{
+  display: none !important;
+  &:after{
+    content: '';
+    display: none !important;
+  }
+}
+
+.dis{
+  display: none;
+}

@@ -1,0 +1,84 @@
+.designers {
+    >div {
+        width: 100%;
+        &:nth-of-type(1) {
+            height: 102px;
+            font-size: 28px;
+            line-height: 102px;
+            >div {
+                float: right;
+                >span {
+                    float: right;
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 24px;
+                }
+                >div {
+                    float: right;
+                    margin-right: 28px;
+                    width: 16px;
+                    height: 98px;
+                    background-image: url("../../img/more.png");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            height: 396px;
+            .designerTab {
+                width: 216px;
+                height: 356px;
+                padding-top: 30px;
+                display: inline-block;
+                text-align: center;
+                margin-right: 20px;
+                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+                >a {
+                    height: 240px;
+                    width: 244px;
+                    >div {
+                        text-align: center;
+                    }
+                    .designerIcon {
+                        width: 100%;
+                        >span {
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 50%;
+                            background: #e4e4e4;
+                            background-position: center;
+                            background-size: cover;
+                            display: inline-block;
+                        }
+                    }
+                    .designerName {
+                        font-size: 30px;
+                        color: #333333;
+                        line-height: 60px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .designerWork {
+                        font-size: 22px;
+                        color: #666666;
+                        line-height: 24px;
+                    }
+                }
+                .com-appoint {
+                    width: 152px;
+                    height: 48px;
+                    border-radius: 4px;
+                    color: #333;
+                    margin-left: 32px;
+                    margin-top: 24px;
+                    font-size: 28px;
+                    line-height: 48px;
+                    border: 1px solid rgb(102, 102, 102)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../scss/minxi.scss";
+.img-show{
+  opacity:1;
+  transition: opacity 1s;
+}
+.hm-carousel {
+  height: 410px!important;
+  img{
+    width: 100%;
+    height: 410px;
+  }
+}
+
+.am-carousel-wrap-dot > span{
+  background: #ffffff;
+  opacity: 0.3;
+}
+.am-carousel-wrap-dot-active > span{
+  background: #ffffff;
+  opacity: 1;
+}
+

@@ -1,0 +1,267 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+
+.pageWrap {
+  width: 100%;
+  padding-top: 88px;
+  background-color: rgb(245, 245, 245);
+  &.ios-top {
+    padding-top: 128px;
+  }
+  .successBox {
+    width: 100%;
+    padding: 100px 0 140px 0;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    background-color: #ffffff;
+    .successImg {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 40px;
+      background: url(./img/success.png) center center no-repeat;
+      background-size: contain;
+    }
+    .successText {
+      font-size: 40px;
+      color: rgb(34, 34, 34);
+      line-height: 56px;
+      margin-bottom: 16px;
+    }
+    .successTip {
+      width: 426px;
+      height: 80px;
+      font-size: 28px;
+      color: #999999;
+      text-align: center;
+      line-height: 40px;
+      //margin-bottom: 80px;
+    }
+    .btn {
+      width: 228px;
+      height: 72px;
+      border-radius: 4px;
+      border: 1px solid rgb(175, 175, 175);
+      color: rgb(34, 34, 34);
+      font-size: 30px;
+      line-height: 72px;
+      text-align: center;
+    }
+  }
+  .recommenBox {
+    padding: 40px 30px 58px 30px;
+    background-color: #ffffff;
+    .recommenTitle {
+      font-size: 30px;
+      letter-spacing: -1px;
+      color: #333333;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .more {
+        color: #666666;
+      }
+    }
+    .recommenContent {
+      .encyItem {
+        width: 100%;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e1e1e1;
+        display: flex;
+        &:last-child {
+          border-bottom: none;
+        }
+        .encyText {
+          width: 374px;
+          height: 210px;
+          margin-right: 36px;
+          .encyTitle {
+            font-size: 34px;
+            line-height: 48px;
+            color: rgb(68, 68, 68);
+            margin-bottom: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .encyInfo {
+            font-size: 28px;
+            line-height: 38px;
+            color: #666666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+        .encyImg {
+          width: 280px;
+          height: 210px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .artItem {
+        width: 100%;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #e1e1e1;
+        &:last-child {
+          border-bottom: none;
+        }
+        .artImg {
+          width: 690px;
+          height: 390px;
+          border-radius: 4px;
+          margin-bottom: 40px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .designerImg {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 370px;
+            right: 30px;
+            background: url(./img/defaultUser.png) center center no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .stage {
+            position: absolute;
+            top: 24px;
+            left: 20px;
+            color: #ffffff;
+            font-size: 22px;
+            line-height: 32px;
+            background-color: #000000;
+            opacity: 0.5;
+            padding: 4px 16px;
+            border-radius: 4px;
+
+          }
+        }
+        .artTitle {
+          width: 100%;
+          font-size: 34px;
+          line-height: 36px;
+          color: #333333;
+          margin-bottom: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .artInfo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .artTag {
+            font-size: 24px;
+            line-height: 28px;
+            color: #999999;
+            span {
+              margin-right: 24px;
+              display: inline-block;
+              height: 28px;
+              position: relative;
+
+              &:last-child{
+                margin-right: 0;
+              }
+              &::before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 1px;
+                height: 18px;
+                top: 4px;
+                left: -12px;
+                background: #999999;
+              }
+              &:first-child::before {
+                width: 0;
+                height: 0;
+              }
+            }
+
+          }
+          .artNumber {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: rgb(188, 188, 188);
+            .look {
+              //position: relative;
+              display: flex;
+              align-items: center;
+              &::before {
+                content: '';
+                //position: absolute;
+                display: inline-block;
+                width: 24px;
+                height: 20px;
+                //left: -30px;
+                //top: -1px;
+                margin-right: 6px;
+                background: url('./img/look.png') center center no-repeat;
+                background-size: cover;
+              }
+            }
+            .play {
+              display: flex;
+              align-items: center;
+              //position: relative;
+              &::before {
+                content: '';
+                //position: absolute;
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                // left: -30px;
+                // top: -1px;
+                margin-right: 6px;
+                background: url('./img/playCount.png') center center no-repeat;
+                background-size: cover;
+              }
+            }
+            .praise {
+              margin-left: 26px;
+              //position: relative;
+              display: flex;
+              align-items: center;
+              &::before {
+                content: '';
+               // position: absolute;
+                display: inline-block;
+                width: 28px;
+                height: 22px;
+                // left: -30px;
+                // top: -2px;
+                margin-right: 6px;
+                background: url('./img/praise.png') center center no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,385 @@
+@import "../../../lib/scss/minxi.scss";
+
+.bottomNav {
+  width: 100%;
+  height: 112px;
+  position: fixed;
+  bottom: 0;
+  z-index: 500;
+  display: flex;
+  .back {
+    width: 90px;
+    height: 100%;
+    background: url(./img/back_white.png) no-repeat;
+    background-size: 60px 60px;
+    background-position: 15px 0;
+    margin-right: 340px;
+  }
+  .praise, .collect {
+    width: 120px;
+    height:100%;
+    margin-right: 10px;
+    display: flex;
+    .praiseNum, .collectNum {
+      font-size: 22px;
+      color: #ffffff;
+    }
+    .com-like {
+      font-size: 22px;
+      color: #ffffff;
+    }
+    .praiseImg, .com-like-img {
+      width:36px;
+      height: 56px;
+      background: url(./img/praise.png) no-repeat;
+      background-size: 36px 36px;
+      background-position: 0 12px;
+      margin-right: 4px;
+    }
+    .liked .com-like-img {
+      background: url(./img/praised.png) no-repeat;
+      background-size: 36px 36px;
+      background-position: 0 12px;
+    }
+    // .collectImg{
+    //   width: 42px;
+    //   height: 60px;
+    //   background: url(./img/collect.png) no-repeat;
+    //   background-size: 42px 40px;
+    //   background-position: 0 12px;
+    //   margin-right: 4px;
+    // }
+    .com-collect  {
+      width: 42px;
+      height: 60px;
+      margin-right: 4px;
+      position: relative;
+    }
+    .com-collect::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42px;
+      height: 60px;
+      background: url(./img/collect.png) no-repeat;
+      background-size: 42px 40px;
+      background-position: 0 12px;
+      margin-right: 4px;
+    }
+    .collected::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42px;
+      height: 60px;
+      background: url(./img/collected.png) no-repeat;
+      background-size: 42px 40px;
+      background-position: 0 12px;
+      margin-right: 4px;
+    }
+  }
+  .share {
+    width: 90px;
+    height: 100%;
+    margin-left: -4px;
+    background: url(./img/share_white.png) no-repeat;
+    background-size: 60px 60px;
+    background-position: 0 0;
+  }
+}
+// .fix-header{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 500;
+
+//   &.ios-nav1 {   //在第一屏为无色
+//     height: 128px;
+//     padding-top: 40px;
+//     background-color:transparent;
+//     //background-image:url(../imgs/backMast.png);
+//   }
+//   &.ios-nav2 {
+//     height: 128px;
+//     padding-top: 40px;
+//     background-color:#FFF;//在第二屏为白色
+//     box-shadow: 0 1px rgba(0,0,0,.1);
+//   }
+
+
+//   &.fixed {
+//     position: fixed;
+//     background:none;
+//     box-shadow: none;
+//     .com-page-nav{
+//       background: none;
+//       box-shadow: none;
+//     }
+//     .backW {
+//       width: 60px;
+//       height: 60px;
+//       border-radius: 50%;
+//       //background-color: rgba(0,0,0,.4);
+//       background-size: .8rem auto!important;
+//       margin-left: .21333rem;
+//       &:before {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         background: url(img/back_white.png) no-repeat center center;
+//         background-size: .8rem auto!important;
+//         width: 60px;
+//         height: 60px;
+//       }
+//     }
+
+//     .share {
+//       width: 60px;
+//       height: 60px;
+//       border-radius: 50%;
+//       //background-color: rgba(0,0,0,.4);
+//       display: none;
+
+//       margin-right: .21333rem;
+//       &:before {
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         background: url(img/share_white.png) no-repeat center center;
+//         background-size: .8rem auto!important;
+//         width: 60px;
+//         height: 60px;
+//       }
+//     }
+
+//   }
+// }
+
+// .com-page-navIos {
+//   width: 100%;
+//   height: 88px;
+//   padding-left: 100px;
+//   padding-right: 100px;
+//   //background-color: #fff;
+//   //box-shadow: 0 1px rgba(0,0,0,.1);
+//   margin-top: 40px;
+
+
+//   >div {
+//     width: 100%;
+//     line-height: 88px;
+//     text-align: center;
+//     font-size: 34px;
+//   }
+
+//   .back,.backW, .share, .shop {
+//     position: absolute;
+//     bottom: 0;
+//     width: 80px;
+//     height: 80px;
+//     padding: 10px;
+
+//     &:before {
+//       content: '';
+//       display: block;
+//       width: 60px;
+//       height: 60px;
+//       background-repeat: no-repeat;
+//       background-position: 0 0;
+//       background-size: 100% 100%;
+//     }
+//   }
+//   .share{
+//     display: none;
+//   }
+//   .backIso{
+//     margin-top: 20px;
+//   }
+//   .backAn{
+//     margin-top: 0;
+//   }
+//   .back {
+//     left: 0;
+
+//     &:before {
+//       background-image: url(img/back.png);
+//     }
+//   }
+//   .backW {
+//     left: 0;
+
+//     &:before {
+//       background-image: url(img/back_white.png);
+//     }
+//   }
+
+//   .share {
+//     right: 0;
+//     display: none;
+
+
+//     &:before {
+//       background-image: url(img/share.png);
+//     }
+//   }
+
+//   .shop {
+//     right: 90px;
+
+//     &:before {
+//       background-image: url(img/shop.png);
+//     }
+//   }
+
+
+// }
+// .com-page-nav {
+//   width: 100%;
+//   height: 88px;
+//   padding-left: 100px;
+//   padding-right: 100px;
+//   //background-image:url(../imgs/backMast.png);
+//   //background-color: #fff;
+//   //box-shadow: 0 1px rgba(0,0,0,.1);
+
+//   >div {
+//     width: 100%;
+//     line-height: 88px;
+//     text-align: center;
+//     font-size: 34px;
+//   }
+
+//   .back,.backW, .share, .shop {
+//     position: absolute;
+//     bottom: 0;
+//     width: 80px;
+//     height: 80px;
+//     padding: 10px;
+
+//     &:before {
+//       content: '';
+//       display: block;
+//       width: 60px;
+//       height: 60px;
+//       background-repeat: no-repeat;
+//       background-position: 0 0;
+//       background-size: 100% 100%;
+//     }
+//   }
+//   .share{
+//     display: none;
+//   }
+//   .backIso{
+//     margin-top: 20px;
+//   }
+//   .backAn{
+//     margin-top: 0;
+//   }
+//   .back {
+//     left: 0;
+
+//     &:before {
+//       background-image: url(img/back.png);
+//     }
+//   }
+//   .backW {
+//     left: 0;
+
+//     &:before {
+//       background-image: url(img/back_white.png);
+//     }
+//   }
+
+//   .share {
+//     right: 0;
+//     display: none;
+
+
+//     &:before {
+//       background-image: url(img/share.png);
+//     }
+//   }
+
+//   .shop {
+//     right: 90px;
+
+//     &:before {
+//       background-image: url(img/shop.png);
+//     }
+//   }
+
+
+// }
+// /*推荐下载*/
+// // .com-app-download-tip {
+// //   display: flex;
+// //   height: 105px;
+// //   width: 100%;
+// //   background-color: #000;
+
+// //   .logo-container {
+// //     width: 140px;
+// //     padding: 12px 30px;
+
+// //     &:before {
+// //       content: "";
+// //       display: block;
+// //       width: 80px;
+// //       height: 80px;
+// //       background: url(img/logo.png) 0 0 no-repeat;
+// //       background-size: 100%;
+// //     }
+// //   }
+
+// //   .info-container {
+// //     flex: 1;
+// //     padding-top: 18px;
+// //     color: #fff;
+
+// //     h5 {
+// //       margin-bottom: 12px;
+// //     }
+
+// //     h2 {
+// //       font-size: 32px;
+// //     }
+// //   }
+
+// //   .btn-container {
+// //     width: 170px;
+// //     padding-right: 10px;
+// //     padding-top: 18px;
+
+// //     a {
+// //       width: 100%;
+// //       height: 70px;
+// //       line-height: 70px;
+// //       color: #fff;
+// //       text-align: center;
+// //       font-size: 30px;
+// //       border-radius: 4px;
+// //       background-color: $blue;
+// //       display: inherit;
+// //       //line-height: 70px;
+// //     }
+// //   }
+
+// //   .close-container {
+// //     width: 100px;
+
+// //     &:before {
+// //       content: '';
+// //       display: block;
+// //       width: 44px;
+// //       height: 44px;
+// //       margin: 30px auto auto;
+// //       background: url(img/close.png) 0 0 no-repeat;
+// //       background-size: 100%;
+// //     }
+// //   }
+
+// //   .wx-tip {
+
+// //   }
+// // }

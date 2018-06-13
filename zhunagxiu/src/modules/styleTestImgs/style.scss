@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+
+.styleImgs{
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  background-image: url("./imgs/bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+.styleContent{
+  width: 82.133333%;
+  height: 948px;
+  height: 71.06446776611694vh;
+  margin:0 auto;
+  margin-top:200px;
+  margin-top: 14.99250374812594vh;
+  background-image: url("./imgs/shadowBox.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.styleImg{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  float: left;
+  >img{
+    margin-left: 1.30%;
+    width: 79.6%;
+    height:646px;
+    margin-top: 6px;
+    height:48.42578710644678vh;
+    margin-top: 0.44977511244378vh;
+    position: absolute;
+  }
+  #styleImgtrue{
+    z-index: 5;
+  }
+  #styleImgfalse{
+    z-index: 1;
+
+  }
+}
+.styleChoice{
+  z-index: 3;
+  padding-top: 80px;
+  padding-top: 5.997001499250375vh;
+  margin-top: -294px;
+  margin-top:-22.03898050974513vh;
+  margin-left: 1.5%;
+  width: 97%;
+  height: 236px;
+  height: 17.69115442278861vh;
+  float: left;
+}
+.styleTitle{
+  width:100%;
+}
+.styleChoiceBox{
+  width: 69%;
+  margin:0 auto;
+  >button {
+    width: 100px;
+    width: 7.49625187406297vh;
+    height: 100px;
+    height: 7.49625187406297vh;
+    display: inline-block;
+    border:0;
+    background-color:transparent;
+    list-style: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .styleLike{
+    margin-right:53px;
+    margin-right:3.97301349325337vh;
+    float:right;
+    background-image: url("./imgs/like.png");
+    box-shadow:-2px 6px 8px 0 rgba(0,0,0,0.30);
+  }
+  .styleDislike{
+    margin-left:53px;
+    margin-left:3.97301349325337vh;
+    float:left;
+    background-image: url("./imgs/dislike.png");
+    box-shadow:-2px 6px 8px 0 rgba(0,0,0,0.30);
+  }
+}
+.styleCount{
+  color:#8d846b;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 2.54872563718141vh;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 68px;
+}
+

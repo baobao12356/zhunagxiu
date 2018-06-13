@@ -1,0 +1,130 @@
+.pageWapper {
+    background: #fff;
+    padding-top: 0;
+    &.app-wrap {
+        padding-top: 90px; //有nav时
+        background-color: #fff;
+    }
+    &.ios-nav {
+        padding-top: 128px; //有nav时
+    }
+    &.ios-iPhoneX {
+        padding: 176px 0 68px;
+    }
+    &.webPadding {
+        padding-top: 105px;
+    }
+    >div {
+        background: #fff;
+    }
+    .com-app-download-tip {
+        background: #000;
+    }
+    .footer {
+        //display: flex;
+        //border-top:1px solid #f5f5f5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        z-index: 10000;
+        &.ios-iPhoneX {
+            padding-bottom: 68px;
+            height: 166px;
+        }
+        >span {
+            .theWords {
+                position: absolute;
+                font-size: 18px;
+                color: #666;
+                bottom: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            float:left;
+            width:16%;
+            height:100px;
+            padding:0;
+            &.com-like {
+                display: block;
+                position: relative;
+                .com-like-img {
+                    background-image: url('./../../../lib/components/like/img/01.png');
+                }
+            }
+            &.com-collect {
+                position: relative;
+            }
+            &.liked .com-like-img {
+                background-image: url('./../../../lib/components/like/img/02.png');
+            }
+            .com-like-img {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 60px;
+                margin: 30px auto;
+                margin-top: 6px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 60px;
+                margin: 30px auto;
+                margin-top: 6px;
+            }
+            &.com-comment {
+                em {
+                    position: absolute;
+                    left: 64px;
+                    top: 2%;
+                    padding: 4px 8px;
+                    line-height: 1;
+                    font-style: normal;
+                    color: #fff;
+                    background-color: #ff4c51;
+                    border: 3px solid #fff;
+                    border-radius: 20px;
+                    font-size: 16px;
+                }
+                .theWords {
+                    position: absolute;
+                    font-size: 20px;
+                    color: #666;
+                    bottom: 12px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        >div {
+            z-index: 99999;
+            float: right;
+            width: 48%;
+            height: 100px;
+            font-family: PingFang-SC-Regular;
+            font-size: 34px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            line-height: 100px;
+        }
+    }
+}
+
+//nav.com-page-nav{
+//  box-sizing: border-box;
+//  height:128px;
+//  padding-top: 40px;
+//  .back:before{
+//    margin-top: 10px;
+//  }
+//  .share:before{
+//    margin-top: 10px;
+//  }
+//}
+.com-appoint {
+    background-color: #dfaf7d !important;
+}

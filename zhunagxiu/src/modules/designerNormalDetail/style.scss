@@ -1,0 +1,617 @@
+@import "../../lib/scss/minxi.scss";
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+.stopScroll {
+    overflow-y: hidden !important;
+}
+
+//.com-concern{
+//  font-weight: bold;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  margin-right: 36px;
+//  font-size: 28px;
+//  background: url("./img/newImg/icon_1.png") no-repeat;
+//  background-size: cover !important;
+//  width: 100px;
+//  height: 60px;
+//  display: inline-block;
+//}
+//.concerned{
+//  background: url("./img/newImg/icon_2.png") no-repeat !important;
+//  background-size: cover !important;
+//  width: 100px;
+//  height: 60px;
+//  display: inline-block;
+//}
+.wrapper {
+    // &.ios-iPhoneX {
+    //     padding: 128px 0 168px;
+    // }
+    .contentBox {
+        .more {
+            font-size: 24px;
+            color: #666;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            i {
+                color: #dfaf7d;
+                font-style: normal !important;
+            }
+            &:after {
+                content: '';
+                width: 12px;
+                height: 21px;
+                display: block;
+                background: url("./img/newImg/more.png");
+                background-size: cover !important;
+                margin-left: 10px;
+            }
+        }
+        >div {
+            background: #fff;
+        } //设计师信息
+        .designerInfos {
+            &.isIos {
+                height: 564px + $iphoneTOP;
+                padding-top: 128px + $iphoneTOP;
+            }
+            &.iPhoneXTop {
+              height: 564px + $iphoneXTOP;
+              padding-top: 128px + $iphoneXTOP;
+            }
+            height: 564px;
+            background: url(./img/topImg.png) center center no-repeat;
+            background-size: cover;
+            padding: 128px 30px 50px 30px;
+            box-sizing: border-box;
+            //background-image: linear-gradient(-90deg, rgb(186, 147, 92), rgb(217, 189, 142));
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            .desTop {
+              height: 192px;
+              margin-bottom: 70px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .desBottom {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .appoint {
+                    display: block;
+                    background: #dfaf7d;
+                    padding: 18px 56px;
+                    font-size: 34px;
+                    text-align: center;
+                    border-radius: 4px;
+                }
+                .collectNumber, .dealNumber, .price {
+                  font-size: 44px;
+                  letter-spacing: -0.8px;
+                  line-height: 60px;
+                  >:nth-child(2) {
+                    font-size: 22px;
+                    line-height: 32px;
+                    letter-spacing: -0.4px;
+                    margin-top: 2px;
+                  }
+                }
+                &.activityFont {
+                  .collectNumber, .dealNumber, .price {
+                    font-size: 40px;
+                    letter-spacing: -0.6px;
+                    line-height: 56px;
+                  }
+                }
+                .price {
+                    // display: flex;
+                    // flex-direction: row;
+                    // align-items: flex-start;
+                    //font-size: 30px;
+                    //color: #333;
+                    .priceNum {
+                        //font-size: 40px !important;
+                        font-style: normal !important;
+                    }
+                    .prices {
+                        // align-self: flex-start;
+                        // display: flex;
+                        // flex-direction: column;
+                        // text-align: right;
+                        //margin-top: -5px;
+                        .active {
+                            //color: #ff454a;
+                        }
+                        .designerBudget {
+                            //color: #999;
+                            font-size: 22px;
+                            line-height: 34px;
+                            color: rgb(247, 247, 247);
+                            text-decoration: line-through;
+                        }
+                    }
+                    // &:before {
+                    //     content: '';
+                    //     display: block;
+                    //     width: 30px;
+                    //     height: 40px;
+                    //     background: url("./img/newImg/price.png");
+                    //     background-size: cover !important;
+                    //     margin-right: 16px;
+                    // }
+                }
+            }
+            .desLeft {
+                max-width: 70%;
+                .desName {
+                    font-size: 48px;
+                    line-height: 66px;
+                    letter-spacing: -1.2px;
+                    margin-bottom: 16px;
+                }
+                .desWorkTime {
+                    margin-bottom: 18px;
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+                .desSchool {
+                    margin-bottom: 16px;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: -0.6px;
+                }
+            }
+            .desRight {
+                // display: flex;
+                // align-self: start;
+                // flex-direction: column;
+                .pic {
+                    background-size: cover !important;
+                    //margin-bottom: 90px;
+                    background: url("./img/admin1.png");
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 100%;
+                    background-size: cover !important;
+                }
+            }
+        }
+        .scoreWrap {
+          padding: 0 30px;
+          .scoreInfo {
+            width: 100%;
+            padding: 60px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(224, 224, 224);
+          }
+          .scoreLeft {
+            width: 210px;
+            text-align: center;
+            position: relative;
+            &::after {
+              content: '';
+              display: inline-block;
+              width: 4px;
+              height: 72px;
+              background-color: #e1e1e1;
+              position: absolute;
+              top: 14px;
+              right: 0;
+            }
+            .satisfyScore {
+              font-size: 60px;
+              line-height: 52px;
+              color: rgb(223, 173, 125);
+              margin-bottom: 8px;
+              span {
+                font-size: 26px;
+              }
+            }
+            p {
+              font-size: 24px;
+              line-height: 28px;
+              color: #666666;
+            }
+          }
+          .scoreRight {
+            width: 476px;
+            text-align: center;
+            font-size: 28px;
+            line-height: 40px;
+            color: #333333;
+            padding-left: 48px;
+            .designScore, .serviceScore {
+              display: flex;
+              align-items: center;
+              >:first-child {
+                margin-right: 28px;
+              }
+            }
+            .designScore {
+              margin-bottom: 16px;
+            }
+            .evaluateStar {
+              .score {
+                font-size: 28px;
+                color: #666666;
+                line-height: 36px;
+                .star {
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 9px;
+                  background: url(./img/starts.png) center center no-repeat;
+                  background-size: cover;
+                }
+                .halfStar {
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 16px;
+                  background: url(./img/halfStar.png) center center no-repeat;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+        }
+        //服务
+        .serviceBox {
+            padding: 40px 30px 40px 30px;
+            .serTitle {
+                margin-bottom: 48px;
+                padding: 0 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .boxName {
+                    font-weight: bold;
+                    font-size: 30px;
+                    color: #333;
+                }
+                .more {
+                    font-size: 24px;
+                    color: #666;
+                }
+            }
+            .serBox {
+                position: relative;
+                &:after {
+                    clear: both;
+                    content: '';
+                    display: block;
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: #f5f5f5;
+                    position: absolute;
+                    top: -15px;
+                    left: 50px;
+                    transform: rotate(45deg);
+                }
+                background: #f5f5f5;
+                padding:40px 30px 0;
+                clear: both; //display: flex;
+                //flex-direction: row;
+                //flex-wrap: wrap;
+                //height: 264px;
+                //justify-content: space-between;
+                .serItems {
+                    //margin: 0 13px;
+                    width: 20%;
+                    float: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; //margin-bottom: 40px;
+                    .serDesc {
+                        background-size: 100% !important;
+                        background-position: center;
+                        height: 40px;
+                        width: 100%;
+                    }
+                    .serIcon {
+                        background-size: cover !important;
+                        margin-bottom: 14px;
+                        background: red;
+                        width: 60px;
+                        height: 60px;
+                    }
+                    .serName {
+                        font-size: 24px;
+                        color: #666;
+                    }
+                }
+            }
+        } //所获奖项
+        .honorBox {
+            padding: 40px 40px 0 40px;
+            //padding: 0 40px;
+            .honorTop {
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .honorName {
+                    font-weight: bold;
+                    font-family: PingFang-SC-Medium;
+                    font-size: 30px;
+                    color: #333333;
+                }
+            }
+            .honorBoxContent {
+                padding-left: 50px;
+                .honorTitle {
+                    font-family: PingFangSC-Regular;
+                    font-size: 34px;
+                    color: #333333;
+                    margin-bottom: 28px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    &:before {
+                        content: '';
+                        width: 32px;
+                        height: 38.5px;
+                        display: block;
+                        background: url("./img/newImg/honor.png");
+                        background-size: cover !important;
+                        margin: 0 20px 0 -42px;
+                    }
+                }
+                .honorContent {
+                    font-family: PingFangSC-Regular;
+                    font-size: 24px;
+                    color: #999999;
+                    padding-bottom: 40px;
+                }
+            }
+        } // 案例
+        .caseBox {
+            //padding-left: 30px;
+            //padding: 0 40px 40px 40px;
+            margin-top: 12px;
+            .caseTop {
+                padding: 40px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: center;
+                .caseName {
+                    font-weight: bold;
+                    font-family: PingFang-SC-Medium;
+                    font-size: 30px;
+                    color: #333333;
+                }
+            }
+            .caseItemBox {
+                white-space: nowrap; //display: flex;
+                //flex-direction: row;
+                padding-bottom: 40px;
+                width: 100%;
+                overflow-x: scroll;
+                overflow-y: hidden !important;
+                -webkit-overflow-scrolling: touch;
+                .caseItem {
+                    &:first-child {
+                        margin-left: 24px !important;
+                        .caseTitle,
+                        .caseTags {
+                            padding-left: 12px !important;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 46px;
+                    }
+                    margin-left: 16px;
+                    display: inline-block;
+                    .caseTitle,
+                    .caseTags {
+                        padding-left: 6px !important;
+                    }
+                    .casePic {
+                        background-size: cover !important;
+                        width: 670px;
+                        height: 376px;
+                        margin-bottom: 30px;
+                    }
+                    .caseTitle {
+                        font-family: PingFangSC-Regular;
+                        font-size: 34px;
+                        color: #333333;
+                        margin-bottom: 10px;
+                    }
+                    .caseTags {
+                        font-family: PingFangSC-Regular;
+                        font-size: 24px;
+                        color: #999999;
+                    }
+                }
+            }
+        } //  公司&城市
+        .desCityCompany {
+            margin-top: 12px;
+            padding: 40px 40px 50px 40px;
+            .companyTop,
+            .cityTop {
+                font-weight: bold;
+                font-family: PingFang-SC-Medium;
+                font-size: 30px;
+                color: #333333;
+                margin-bottom: 28px;
+            }
+            .cityName {
+                font-family: PingFangSC-Regular;
+                font-size: 34px;
+                color: #333333;
+                margin-bottom: 70px;
+            }
+            .companyName {
+                font-family: PingFangSC-Regular;
+                font-size: 34px;
+                color: #333333;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 12px;
+                    height: 21px;
+                    background: url("./img/newImg/more.png");
+                    background-size: 100% !important;
+                }
+            }
+        } //个人信息
+        .personalInfo {
+            margin-bottom: 100px;
+            margin-top: 12px;
+            padding: 40px;
+            font-size: 30px;
+            color: #333333;
+            line-height: 1.5;
+            .personalBox {
+                margin-bottom: 60px;
+            }
+            .ideaTop,
+            .personalTop {
+                font-weight: bold;
+                margin-bottom: 28px;
+            }
+            .personalContent,
+            .ideaContent {}
+        }
+    }
+}
+
+//预约按钮
+.closeBtn {
+    background: #dfaf7d;
+    width: 100%;
+    text-align: center;
+    padding: 32px 0;
+    color: #fff;
+    font-size: 34px;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+.appointBtn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    >:nth-child(1) {
+        flex-grow: 1;
+    }
+    >:nth-child(2) {
+        background: #dfaf7d;
+        text-align: center;
+        padding: 32px 0;
+        color: #fff;
+        font-size: 34px;
+        width: 430px !important;
+    }
+}
+
+//弹框
+.dialogInfo {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    .shadow {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: #000000;
+        z-index: 501;
+    }
+    .dialogBox {
+        position: absolute;
+        bottom: 0;
+        z-index: 502;
+        width: calc(100% - 40px);
+        height: 890px;
+        padding: 40px 30px;
+        background: #fff;
+        .dTitle {
+            text-align: center;
+            font-family: PingFang-SC-Medium;
+            font-size: 40px;
+            color: #333333;
+            margin-bottom: 60px;
+        }
+        .dItem {
+            overflow-y: scroll;
+            height: 700px;
+            .dList {
+                margin-bottom: 28px;
+                display: flex;
+                flex-direction: column;
+                .dListTitle {
+                    margin-bottom: 28px;
+                    font-family: PingFang-SC-Medium;
+                    font-size: 30px;
+                    color: #333333;
+                }
+                .dListContent {
+                    font-family: PingFangSC-Regular;
+                    font-size: 24px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+}
+
+.tags {
+  //margin-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+   :last-child {
+      border-right: none !important;
+  }
+   :first-child {
+      margin-left: 0px !important;
+  }
+  div {
+      //margin-right: 20px;
+      font-family: PingFangSC-Regular;
+      //color: #999999;
+      border-right: 1px solid #e4e4e4;
+      border-radius: 4px;
+      padding-right: 10px;
+      margin-left: 10px; //padding: 4px 12px;
+      font-size: 20px;
+  }
+}
+
+.dis {
+    display: none !important;
+}
+
+.isOpacity {
+    opacity: 0 !important;
+}
+
+.tagsCase {
+    margin-left: 15px !important;
+}

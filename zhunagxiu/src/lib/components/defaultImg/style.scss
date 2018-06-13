@@ -1,0 +1,16 @@
+@import "../../scss/minxi.scss";
+
+.com-default-img-content {
+  background-image: url(./img/default.png);
+  background-color: #f1f1f1;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  &.img-show{
+    background: none;
+    background-color:#fff!important;
+  }
+}
+.img-show{
+  opacity:1;
+  transition: opacity 1s;
+}

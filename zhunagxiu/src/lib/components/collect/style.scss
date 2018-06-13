@@ -1,0 +1,21 @@
+@import "../../scss/minxi.scss";
+
+.com-collect {
+  display: block;
+  width: 80px;
+  height: 80px;
+  padding: 9px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: url(img/01.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+
+  &.collected:after {
+    background-image: url(img/02.png);
+  }
+}

@@ -1,0 +1,173 @@
+.desingerInfo {
+    position: relative;
+    display: inline-block; //padding: 32px 0px 40px 32px;
+    padding: 42px 34px 60px 34px;
+    background-color: #fff;
+    width: 100%; //margin-top: 16px;
+    //margin-bottom: 16px;
+    font-size: 26px;
+    color: #999;
+    .desinger-box {
+        padding: 30px 0;
+        border: 1px #e1e1e1 solid;
+        .desinger-des {
+            >div {
+                display: inline-block;
+                float: left;
+            }
+            >div:nth-child(1) {
+                margin-left: 24px;
+            }
+            >div:nth-child(2) {
+                width: 52%;
+                >div {
+                    width: 100%;
+                }
+                >div:nth-child(2) {
+                    line-height: 45px;
+                    margin: 0;
+                    width: 350px;
+                }
+                >div:nth-child(3) {
+                    >span {
+                        >span {
+                            color: #f6ac43 !important;
+                        }
+                    }
+                }
+            }
+            .designerImg {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background-size: 100% !important;
+                margin-right: 3%;
+            }
+            .hasYears {
+                margin-right: 20px;
+                .years {
+                    margin-right: 14px;
+                }
+            }
+            .info_designer {
+                margin-top: 28px;
+                font-size: 24px;
+                span {
+                    color: #666;
+                }
+            }
+            .desingerName {
+                height: 40px;
+                font-family: PingFangSC-Semibold;
+                font-size: 30px;
+                color: #333333;
+                margin-top: 14px;
+                >span {
+                    display: inline-block;
+                    float: left;
+                }
+                >span:nth-child(1) {
+                    font-size: 30px;
+                    color: #333;
+                    font-family: "PingFangSC-Semibold";
+                    font-weight: 700;
+                }
+                >span:nth-child(2) {
+                    margin-left: 20px;
+                    font-weight: inherit;
+                    >i,
+                    >span {
+                        display: inline-block;
+                        float: left;
+                    }
+                    >i {
+                        background: url('../../../../imgs/common/addr.png') no-repeat;
+                        background-size: 100%;
+                        width: 42px;
+                        height: 40px;
+                        display: inline-block;
+                    }
+                }
+                >span:nth-child(3) {
+                    float: right !important;
+                    color: #439df7;
+                    font-size: 34px;
+                    >i {
+                        font-size: 24px !important;
+                    }
+                }
+            }
+            .make {
+                width: 96px !important;
+                height: 48px;
+                background-color: #dfaf7d;
+                border-radius: 2px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 48px;
+                position: absolute;
+                right: 72px;
+                top: 112px;
+            }
+            .cityName_desinger {
+                position: relative;
+                padding-left: 20px;
+                font-size: 26px;
+                line-height: 36px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    height: 26px;
+                    width: 2px;
+                    background-color: #444;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+            .com-concern {
+                position: absolute;
+                right: 32px;
+                top: 75px;
+                width: 16%;
+                height: 48px;
+                text-align: center;
+                line-height: 48px;
+                background: #DFAF7D;
+                border-radius: 4px;
+                color: #fff;
+                &:after {
+                    //content: '关注';
+                    color: #fff;
+                    font-size: 28px;
+                }
+                &.concerned {
+                    background-color: #F0F0F0;
+                    color: #999;
+                }
+                &.concerned:after {
+                    //content: '已关注';
+                    color: #999;
+                }
+            }
+        }
+        .desinger-company {
+            margin-top: 20px;
+            width: 100%;
+            padding: 0 20px;
+            .company-box {
+                border-top: 1px #e1e1e1 solid;
+                padding-top: 25px;
+                .arrow {
+                    width: 14px;
+                    height: 14px;
+                    border-top: 2px solid #666666;
+                    border-right: 2px solid #666666;
+                    transform: rotate(45deg);
+                    display: inline-block;
+                    float: right;
+                    margin: 10px 30px 0 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import "../../scss/minxi.scss";
+
+ .com-comment {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    padding: 9px;
+    em {
+      position: absolute;
+      left: 62px;
+      top: 2%;
+      padding: 6px 10px;
+      line-height: 1;
+      font-style: normal;
+      color: #fff;
+      background-color: #fe8081;
+      border: 3px solid #fff;
+      border-radius: 14px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 62px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100% 100%;
+      background-image: url(img/01.png);
+    }
+  }
+.com_padding{
+  padding: 20px 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  .com-comment-count-wrap{
+    display: flex;
+    height: 25px;
+    .com-comment-count{
+      display: block;
+      width: 27px;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100% 100%;
+      background-image: url('./img/comment_count.png');
+      color:#999;
+    }
+    em{
+      padding-left:10px ;
+      font-family:SFNSDisplay-Regular;
+      font-size:24px;
+      color:#999999;
+      line-height:24px;
+      text-align:left;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,247 @@
+//.line{
+//  background: #f5f5f5;
+//  width: 100%;
+//  height:16px;
+//}
+.am-toast.am-toast-mask {
+    height: 93%;
+    top: 8%;
+}
+
+.articleDetailBox {
+    overflow-x: hidden;
+    padding-top: 0;
+    background-color: #fff;
+    &.app-articleWrap {
+        overflow-x: hidden;
+        padding-top: 90px; //有nav时
+        background-color: #fff;
+    }
+    &.ios-nav {
+        padding-top: 128px;
+    }
+    &.ios-iPhoneX {
+        padding: 176px 0 128px;
+    }
+}
+
+.box-bottom {
+    padding-bottom: 103px;
+}
+
+.webPadding {
+    padding-top: 105px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #666
+}
+
+.button-wrapper {
+    text-align: center;
+    margin-bottom: 84px;
+    .button-wrapper-btn {
+        display: inline-block;
+        width: 81px;
+        &.btn-liked {
+            margin-right: 70px;
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 40px;
+                left: -121px;
+                width: 100px;
+                height: 1px;
+                background: url(../imgs/line@1x.png) no-repeat;
+                background-size: contain;
+            }
+        }
+        &.btn-liked .com-like .com-like-img {
+            width: 81px;
+            height: 81px;
+            padding: 0;
+            background: url(../imgs/ic_xiangqingdianzan@2x.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &.btn-liked .com-like.liked .com-like-img {
+            background: url(../imgs/ic_xiangqingdianzan_1@2x.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &.btn-collect .com-collect.collected {
+            background: url(../imgs/ic_xiangqingshoucang_1@2x.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &.btn-collect .com-collect {
+            width: 81px;
+            height: 81px;
+            padding: 0;
+            background: url(../imgs/ic_xiangqingshoucang@2x.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            &:after {
+                display: none;
+            }
+        }
+        &.btn-collect {
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 40px;
+                left: 101px;
+                width: 100px;
+                height: 1px;
+                background: url(../imgs/line@1x.png) no-repeat;
+                background-size: contain;
+            }
+        }
+        p {
+            text-align: center;
+            padding-top: 19px;
+            font-size: 28px;
+            line-height: 28px;
+            color: #ccc;
+        }
+    }
+}
+
+/*设计师*/
+
+.designerList {
+    padding: 0 32px;
+    &.designerList-hide {
+        display: none;
+    }
+    .designer-item {
+        width: 100%;
+        height: 180px;
+        background-color: #f9f9f9;
+        margin-bottom: 21px;
+        position: relative;
+    }
+    .designer-head {
+        position: absolute;
+        top: 29px;
+        left: 29px;
+        width: 118px;
+        height: 118px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        img {
+            width: 118px;
+            height: 118px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+    }
+    .designer-rightInfo {
+        padding: 52px 0 52px 170px;
+        .realName {
+            font-size: 32px;
+            line-height: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .designer-desc {
+            font-size: 24px;
+            line-height: 24px;
+            color: #999;
+        }
+    }
+}
+
+// .com-page-footer > div:nth-of-type(1){
+//   flex-basis: 70%;
+// }
+// .com-page-footer > div:nth-of-type(2){
+//   flex-basis: 30%;
+// }
+.com-page-footer .comment-content,
+.com-page-footer .like-content {
+    width: 40%;
+}
+
+.com-page-footer .comment-content {
+    margin-left: 10%;
+}
+
+.recommends-wrap {
+    .details {
+        font-size: 28px;
+        padding: 0 32px;
+        color: #444;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    .detailsLine {
+        border-bottom: 1px solid #E4E4E4;
+        margin: 30px 0 40px 0;
+    }
+    ul {
+        a {
+            padding: 0 32px;
+            margin-bottom: 24px;
+            .detailListLeft {
+                width: 280px;
+                height: 210px;
+                margin-bottom: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 30px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .detailListRight {
+                height: 178px;
+                display: inline-block;
+                width: 376px;
+                vertical-align: middle;
+                position: relative;
+                p {
+                    font-size: 32px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                span {
+                    font-size: 24px;
+                    color: #666;
+                    display: inline-block;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 3px;
+                    padding: 6px 12px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.freeRoom {
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    bottom: 130px;
+    right: 32px;
+    z-index: 10;
+    background-image: url("../imgs/freeRoom.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

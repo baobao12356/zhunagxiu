@@ -1,0 +1,181 @@
+//图片显示样式（组件）
+.picBox {
+    //width: 750px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    padding: 4% 4% 0 4%;
+    img {
+        width: 100% !important; //height: 100% !important;
+    }
+    >div {
+        display: block;
+        width: 100% !important;
+        margin: 0 auto;
+        height: 420px;
+        overflow: hidden;
+        margin-bottom: 18px; //background: #f5f5f5 url(../../../../../lib/components/defaultImg/img/default.png) 50% 50% no-repeat;
+        //background-size: 50%;
+        background: #f1f1f1;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .smallPic {
+        /*margin-left: 24px !important;*/
+        width: inherit;
+        display: inline-flex;
+        justify-content: space-between;
+        flex: 1;
+        height: auto !important;
+        background: none;
+        img {
+            height: 100% !important;
+        }
+        >div {
+            width: 48%;
+            height: 250px !important; //background: #f5f5f5 url(../../../../../lib/components/defaultImg/img/default.png) 50% 50% no-repeat;
+            background: #f1f1f1; //background-size: 50%;
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+    }
+    h3 {
+        display: block;
+        font-size: 28px;
+        font-family: "PingFang SC-Medium";
+        margin: 12px 50px 50px 0px;
+        font-weight: 700;
+    }
+}
+
+.shadow {
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, .3);
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 250px;
+    color: #fff;
+    font-size: 32px;
+    font-family: "DINPro-Regular";
+}
+
+.picAuto {
+    height: auto !important;
+}
+
+.picText {
+    font-size: 30px;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.picBox .table-comp {
+    height: auto;
+    background: #ffffff;
+    .table-title {
+        font-size: 30px;
+        text-align: left;
+        color: #333333;
+        margin-bottom: 20px;
+    }
+    .table-box {
+        border: 1px #e1e1e1 solid;
+        text-align: center;
+        color: #333;
+        >div {
+            .table-td {
+                padding: 20px 10px;
+                line-height: 40px;
+                vertical-align: middle;
+            }
+            .table-td:last-child {
+                border: none;
+            }
+        }
+        .table-th {
+            background-color: #d0cfcf;
+            font-size: 28px;
+        }
+        .table-tr {
+            font-size: 26px;
+            .table-td {
+                border-right: 1px #e1e1e1 solid;
+            }
+        }
+        .more {
+            padding: 20px 0;
+            border-top: 1px #e1e1e1 solid;
+            position: relative;
+            color: #666666;
+            i {
+                border-right: 2px solid #999999;
+                border-top: 2px solid #999999;
+                height: 12px;
+                width: 12px;
+                transform: rotate(deg);
+                -webkit-transform: rotate(135deg);
+                /*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+                border-left: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+                display: inline-block;
+                position: absolute;
+                margin: 5px 0 0 10px;
+            }
+        }
+        .more-up {
+            padding: 20px 0;
+            border-top: 1px #e1e1e1 solid;
+            position: relative;
+            color: #666666;
+            i {
+                border-right: 2px solid #999999;
+                border-top: 2px solid #999999;
+                height: 12px;
+                width: 12px;
+                transform: rotate(deg);
+                -webkit-transform: rotate(-45deg);
+                /*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+                border-left: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+                display: inline-block;
+                position: absolute;
+                margin: 10px 0 0 10px;
+            }
+        }
+    }
+}
+
+.table-box .table-td:nth-child(1) {
+    display: inline-block;
+    width: 35%;
+}
+
+.table-box .table-td:nth-child(2) {
+    display: inline-block;
+    width: 25%;
+}
+
+.table-box .table-td:nth-child(3) {
+    display: inline-block;
+    width: 20%;
+}
+
+.table-box .table-td:nth-child(4) {
+    display: inline-block;
+    width: 20%;
+}
+
+.table-box .table-tr:nth-child(odd) {
+    background: #f1f1f1
+}
+
+.table-box .table-tr:nth-child(n+6) {
+    display: none;
+}

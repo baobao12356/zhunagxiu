@@ -1,0 +1,180 @@
+@import "../../../../lib/scss/base.scss";
+.my-home-info {
+  min-height: 374px;
+  margin-bottom: 12px;
+  padding-top: 88px;
+  width: 100%;
+  background: -webkit-linear-gradient(to bottom, rgb(221, 178, 133), rgba(223, 175, 125, 0));
+  background: -moz-linear-gradient(to bottom, rgb(221, 178, 133), rgba(223, 175, 125, 0));
+  background: -ms-linear-gradient(to bottom, rgb(221, 178, 133), rgba(223, 175, 125, 0));
+  background: -o-linear-gradient(to bottom, rgb(221, 178, 133), rgba(223, 175, 125, 0));
+  background: linear-gradient(to bottom, rgb(221, 178, 133), rgba(223, 175, 125, 0));
+
+  &.app-wrap {
+    padding-top: 90px; //有nav时
+  }
+  &.ios-nav {
+    padding-top: 90px+$iphoneTOP; //有nav时
+  }
+  &.webPadding {
+    padding-top:90px;
+  }
+  &.iPhone-x{
+    padding-top: 90px+$iphoneXTOP;
+  }
+}
+
+.tabs {
+  font-size: 0;
+  letter-spacing: -6px;
+  padding: 56px 0 18px;
+  margin: 0 24px;
+}
+
+.tab1, .tab2, .tab3 {
+  font-size: 30px;
+  letter-spacing: 0;
+  display: inline-block;
+  vertical-align: text-bottom;
+  text-align: center;
+  color: rgb(241, 241, 241);
+  width: 33.33%;
+  white-space: nowrap;
+  overflow: visible;
+  text-decoration: none !important;
+}
+
+.tab1.tab-active:after, .tab2.tab-active:after {
+  content: '中';
+}
+
+.tab3.tab-active:after {
+  content: '啦';
+}
+
+.tab-active {
+  font-size: 50px;
+  letter-spacing: 0;
+  font-family: PingFangSC-Medium;
+  color: #FFF;
+}
+
+.tab-point {
+  margin: 14px 19%;
+  background: rgba(255, 255, 255, .2);
+  overflow: visible;
+  height: 4px;
+  position: relative;
+}
+
+.point1, .point2, .point3 {
+  width: 16px;
+  height: 16px;
+  background: #f4e5d6;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.point1 {
+  left: 0;
+}
+
+.point2 {
+  left: 49%;
+}
+
+.point3 {
+  right: 0;
+}
+
+.point-active {
+  width: 28px;
+  height: 28px;
+  background-image: -webkit-radial-gradient(circle farthest-side, #FFF, #FFF 37%,rgba(255,255,255,.4) 60%, rgba(255,255,255,.2) 80%, rgba(255,255,255,0) 100%);
+  background-image: -moz-radial-gradient(circle farthest-side, #FFF, #FFF 37%,rgba(255,255,255,.4) 60%, rgba(255,255,255,.2) 80%, rgba(255,255,255,0) 100%);
+  background-image: -ms-radial-gradient(circle farthest-side, #FFF, #FFF 37%,rgba(255,255,255,.4) 60%, rgba(255,255,255,.2) 80%, rgba(255,255,255,0) 100%);
+  background-image: -o-radial-gradient(circle farthest-side, #FFF, #FFF 37%,rgba(255,255,255,.4) 60%, rgba(255,255,255,.2) 80%, rgba(255,255,255,0) 100%);
+  background-image: radial-gradient(circle farthest-side, #FFF, #FFF 37%,rgba(255,255,255,.4) 60%, rgba(255,255,255,.2) 80%, rgba(255,255,255,0) 100%);
+}
+
+.banner-swiper {
+  width: 690px;
+  height: 176px;
+  margin: 40px auto 0;
+
+  .banner-cover {
+    width: 690px;
+    height: 176px;
+    overflow: hidden;
+
+    img {
+      width: 690px;
+      height: 176px;
+    }
+  }
+}
+
+.mhi {
+  margin-bottom: -28px;
+
+  .mhi-address {
+    margin: 32px auto 0;
+    width: 90.9%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .mhi-phone {
+    width: 92%;
+    //height: 90px;
+    background: #FFF;
+    line-height: 42px;
+    padding: 28px 0;
+    text-align: center;
+    margin: 40px auto 0;
+    font-size: 0;
+
+    div {
+      text-align: center;
+      color: rgb(223, 175, 125);
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+
+      i {
+        background: url("../img/call.png") center no-repeat;
+        background-size: contain !important;
+        display: inline-block;
+        vertical-align: sub;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+
+      a {
+        font-family: PingFangSC-Regular;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0;
+        color: rgb(223, 175, 125) !important;
+        text-decoration: none !important;
+      }
+    }
+
+    div:first-child {
+      border-right: 4px solid rgba(224, 224, 224, .5);
+    }
+  }
+}

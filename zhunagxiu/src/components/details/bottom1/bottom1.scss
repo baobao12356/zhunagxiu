@@ -1,0 +1,115 @@
+.bottom1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 30px;
+  padding-right:0;
+  height: 99px;
+  line-height: 98px;
+  border-top: 1px solid #e4e4e4;
+  background-color: #fff;
+
+  .comment{
+    margin-top: 19px;
+    margin-right: 12px;
+    width: 350px;
+    height: 62px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    font-size: 24px;
+
+    &:before {
+      content:  '';
+      display: inline-block;
+      margin-left: 18px;
+      margin-right: 12px;
+      vertical-align: middle;
+      background-image: url("../imgs/comment.png");
+      width: 30px;
+      height:30px;
+      background-size: contain;
+    }
+  }
+
+  span {
+    padding-top: 24px;
+    width: 116px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 98px;
+    font-size: 24px;
+    color: #666666;
+
+    &:before {
+      content: '';
+      display: block;
+      vertical-align: middle;
+      position: absolute;
+      top: 14px;
+      float: left;
+      left: 50%;
+      margin-left: -0.293335rem;
+      width: 44px;
+      height:44px;
+      background-size: contain;
+    }
+
+    &:nth-of-type(1) {
+      &:before {
+        background-image: url("../imgs/commentList.png");
+      }
+    }
+
+    &.likeState0 {
+      &:before {
+        background-image: url("../imgs/like1.png");
+      }
+    }
+    &.likeClick0 {
+      &:before {
+        background-image: url("../imgs/like1.png");
+      }
+    }
+    &.clickLike {
+      &:before {
+        background-image: url("../imgs/like1.png");
+      }
+    }
+
+    &.likeState1 {
+      &:before {
+        background-image: url("../imgs/like2.png");
+      }
+    }
+    &.likeClick1 {
+      &:before {
+        background-image: url("../imgs/like2.png");
+      }
+    }
+    &.collectState0{
+      font-size: 22px;
+      &:before {
+        background-image: url("../imgs/collect1.png");
+      }
+    }
+    &.clickCollect{
+      font-size: 22px;
+      &:before {
+        background-image: url("../imgs/collect1.png");
+      }
+    }
+    &.collectState1 {
+      &:before {
+        background-image: url("../imgs/collect2.png");
+      }
+    }
+
+  }
+}

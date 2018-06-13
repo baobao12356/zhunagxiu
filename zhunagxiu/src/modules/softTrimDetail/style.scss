@@ -1,0 +1,357 @@
+@import '../../lib/scss/base';
+
+.com-page-nav{
+  box-shadow: 0 1px rgba(0, 0, 0, 0) !important;
+}
+
+.isIOS{
+  padding-top:50px;
+}
+.andApp{
+  margin-top: 90px;
+}
+.iosApp{
+  margin-top: 140px;
+}
+
+
+.wrapper{
+  background: #fff;
+  padding:0 32px;
+  margin-top: 140px;
+  overflow: hidden;
+  .title{
+    font-size: 56px;
+    font-weight: bolder;
+  }
+  .tags{
+    margin-top: 40px;
+    span{
+      font-size: 28px;
+      color:#999;
+    }
+  }
+
+  .designer{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+    .pic{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .designerName{
+      font-size: 30px;
+      margin-left: 16px;
+    }
+  }
+
+  .casePic{
+    width: 100%;
+    img{
+      width: inherit;
+    }
+  }
+
+  @at-root .caseTypeTitle,.designerTitle,.caseTitle{
+    margin-bottom: 40px;
+    margin-top: 60px;
+    font-size: 30px;
+    color: #333;
+    font-weight: bolder;
+  }
+
+  .caseContent{
+    font-size: 30px;
+    line-height: 45px;
+    color: #333;
+  }
+
+  .caseTypePic{
+    overflow: hidden;
+    position: relative;
+    //background-size: 100% auto !important;
+    margin-bottom: 30px;
+  }
+
+  .caseTypeContent{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #333;
+    line-height: 46px;
+  }
+
+  .designers{
+    margin-top: 60px;
+    .designerBox{
+      margin-bottom: 200px;
+      padding: 20px 20px 40px;
+      display: flex;
+      flex-direction: row;
+      //align-items: center;
+      border: 1px solid #f1f1f1;
+      .designerPhoto,.designerInfo{
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+      }
+      .designerPhoto{
+        font-weight: bolder;
+        font-size: 28px;
+        img{
+          margin-bottom: 28px;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+      }
+
+
+      .designerInfo{
+        flex-grow:1;
+        margin-top: 16px;
+        margin-left: 20px;
+        color: #e4e4e4;
+        .designerName{
+          color: #333;
+          font-size: 34px;
+          font-weight: bolder;
+          span{
+            margin-left: 10px;
+            width: 68px;
+            height: 24px;
+            img{
+              width: inherit;
+              height: inherit;
+            }
+          }
+        }
+        .infoTags{
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          span{
+            padding: 4px 12px;
+            border: 1px solid #f1f1f1;
+            border-radius:4px;
+            margin-right: 10px;
+            text-align: center;
+            color:#999;
+            font-size:22px !important;
+          }
+        }
+
+        .desc{
+          margin-top: 32px;
+          font-size: 28px;
+          color:#999;
+        }
+      }
+
+
+      .toDesigner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+          width: 18px;
+          height: 24px;
+        }
+      }
+
+
+    }
+
+
+
+  }
+
+}
+
+
+
+.footer{
+  //display: flex;
+  //border-top:1px solid #f5f5f5;
+  background: #fff;
+
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100px;
+  >span{
+    border-top:1px solid #e4e4e4;
+    .theWords{
+      position: absolute;
+      font-size: 18px;
+      color:#666;
+      bottom:14px;
+      width:100%;
+      text-align: center;
+    }
+    float:left;
+    width:125px;
+    height:100px;
+    padding:0;
+    &.com-like{
+      display: block;
+      position: relative;
+      .com-like-img{
+        background-image: url('../../lib/components/like/img/01.png');
+      }
+    }
+    &.com-collect{
+      position: relative;
+    }
+    &.liked .com-like-img{
+      background-image: url('../../lib/components/like/img/02.png');
+    }
+    .com-like-img{
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin:30px auto;
+      margin-top: 6px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 60px;
+      height: 60px;
+      margin:30px auto;
+      margin-top: 6px;
+    }
+    &.com-comment{
+      em {
+        position: absolute;
+        left: 64px;
+        top: 2%;
+        padding: 4px 8px;
+        line-height: 1;
+        font-style: normal;
+        color: #fff;
+        background-color: #ff4c51;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+      .theWords{
+        position: absolute;
+        font-size: 20px;
+        color:#666;
+        bottom:12px;
+        width:100%;
+        text-align: center;
+      }
+    }
+  }
+  >div{
+    float:left;
+    width:375px;
+    height:100px;
+    font-family:PingFang-SC-Regular;
+    font-size:34px;
+    color:#fff;
+    background-color: #333;
+    text-align: center;
+    line-height: 100px;
+  }
+}
+
+$tagHeight:40px;
+$paddingLeft:30px;
+$paddingRight:20px;
+
+.clkTags{
+  margin-top: -$tagHeight;
+  font-size: 22px !important;
+  position: absolute;
+  display: inline-block;
+  padding: 0 $paddingRight 0 $paddingLeft;
+  font-family:PingFangSC-Semibold;
+  color:#ffffff;
+  letter-spacing:0.69px;
+  line-height:22px;
+  text-shadow:0 2px 4px rgba(0,0,0,0.50);
+  height: $tagHeight;
+  &:after{
+    content: "";
+    width: calc(100% + 40px);
+    height: 2px;
+    background: #fff;
+    display: block;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.50);
+    border-radius: 100%;
+    margin-left: -$paddingLeft;
+  }
+  i{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:$tagHeight - 16px;
+    left: -16px;
+    width: 32px;
+    height: 32px;
+    background: url(./img/circle.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  span{
+    position: relative;
+    line-height: $tagHeight;
+  }
+
+}
+
+.aniBigger{
+  animation: ani-bigger 2s infinite linear;
+  -moz-animation: ani-bigger 2s infinite linear;
+  -webkit-animation: ani-bigger 2s infinite linear;
+  -o-animation: ani-bigger 2s infinite linear;
+}
+
+@keyframes ani-bigger
+{
+  0%   {transform :scale(0.8)}
+  50%  {transform :scale(1.2)}
+  100% {transform :scale(0.8)}
+}
+
+@-moz-keyframes ani-bigger /* Firefox */
+{
+  0%   {transform :scale(0.8)}
+  50%  {transform :scale(1.2)}
+  100% {transform :scale(0.8)}
+}
+
+@-webkit-keyframes ani-bigger /* Safari 和 Chrome */
+{
+  0%   {transform :scale(0.8)}
+  50%  {transform :scale(1.2)}
+  100% {transform :scale(0.8)}
+}
+
+@-o-keyframes ani-bigger /* Opera */
+{
+  0%   {transform :scale(0.8)}
+  50%  {transform :scale(1.2)}
+  100% {transform :scale(0.8)}
+}
+
+
+.mb-50{
+  margin-bottom: 50px !important;
+}

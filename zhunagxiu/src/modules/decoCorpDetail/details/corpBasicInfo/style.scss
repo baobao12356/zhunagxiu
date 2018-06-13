@@ -1,0 +1,267 @@
+.corpBasicInfo {
+    //height: 282px;
+    width: 100%;
+    .corpTop {
+        position: relative;
+        width: 100%;
+        height: 160px;
+        margin-bottom: 25px;
+        .publicPraise {
+            position: absolute;
+            right: 28px;
+            top: 0;
+            width: 3px;
+            height: 92px;
+            background: rgb(223, 175, 125);
+            border-bottom: 11px solid white;
+            border-left: 43px solid rgb(223, 175, 125);
+            border-right: 43px solid rgb(223, 175, 125);
+            opacity: 0.7;
+            text-align: center;
+            .praise-num {
+                width: 90px;
+                position: absolute;
+                right: -44px;
+                top: 10px;
+                font-size: 30px;
+                color: #fff;
+            }
+            .praise-text {
+                width: 90px;
+                position: absolute;
+                right: -52px;
+                top: 44px;
+                font-size: 12px;
+                -webkit-transform-origin-x: 0;
+                -webkit-transform: scale(0.80);
+                color: #fff;
+            }
+        }
+        .corpTopLeft {
+            top: 24px;
+            float: left;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            width: 17.3333vw;
+            height: 17.3333vw;
+            background: #fff;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .corpTopRight {
+            padding-top: 4px;
+            margin-left: 160px;
+            margin-left: 21.33333333333333vw;
+            >:nth-child(1) {
+                margin-top: 40px;
+                display: flex !important;
+                flex: 1;
+                >:nth-child(1) {
+                    max-width: 360px;
+                    flex-grow: 1;
+                }
+                .corpBox {
+                    color: red !important;
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 44px;
+                    min-width: 170px;
+                }
+            }
+            >div {
+                width: 100%;
+                padding-bottom: 20px;
+                &:nth-of-type(1) {
+                    .corpTitle {
+                        //margin-top: 20px;
+                        display: inline-block;
+                        font-size: 34px; //line-height: 44px;
+                        color: #333333;
+                        font-weight: bold; //max-width: 342px;
+                        //max-width: 45.6vw;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .corpDesc {
+                        line-height: 29px;
+                        margin-left: 20px;
+                        font-size: 22px;
+                        color: #58c28d;
+                        height: 32px;
+                        padding-left: 38px;
+                        padding-right: 12px;
+                        border-radius: 16px;
+                        border: 1px solid #58c28d;
+                        background-image: url("../../img/desc.png");
+                        background-size: 32px 32px;
+                        background-position: -2px;
+                        background-repeat: no-repeat; //vertical-align: middle;
+                    }
+                }
+                &:nth-of-type(2) {
+                    >span {
+                        font-size: 26px;
+                        color: #666;
+                        &:after {
+                            content: '|';
+                            color: #9C9C9C;
+                            margin: 0 12px;
+                        }
+                        &:last-child {
+                            &:after {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon-isPreference {
+                width: 180px;
+                height: 36px;
+                background: url(../../img/isPreference.png) 0 0 no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    .corpMiddle {
+        padding-bottom: 16px;
+        >div {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            font-size: 26px;
+        }
+        .corpMiddleTip {
+            width: 122px;
+            color: #666;
+            display: inline-block;
+            float: left;
+        }
+        .corpMiddleInfo {
+            display: inline-block;
+            float: left;
+            width: 494px;
+            color: #333;
+            margin-left: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .corpMiddleInfoPrice {
+            color: #dfaf7d;
+            font-size: 34px;
+        }
+        .corpOther {
+            height: 60px;
+        }
+    }
+    .corpBottom {
+        border-top: 12px solid #f1f1f1;
+        margin-left: -28px;
+        padding-left: 28px;
+        .promoteCoupon {
+            height: 88px;
+            border-bottom: 2px solid rgb(241, 241, 241);
+            display: flex;
+            align-items: center;
+            .couponSign {
+                width: 40px;
+                height: 40px; //padding: 8px;
+                text-align: center;
+                line-height: 40px;
+                background-color: rgb(245, 166, 35);
+                font-size: 24px;
+                color: #ffffff;
+            }
+            .couponDesc {
+                width: 580px;
+                margin-right: 40px;
+                font-size: 26px;
+                line-height: 88px;
+                color: #333333;
+                margin-left: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .promoteActivity {
+        width: 100%; //width: 100vw;
+        height: 88px;
+        line-height: 88px; //border-top: 12px solid #f1f1f1;
+        //margin-left: -28px;
+        //padding-left: 28px;
+        >div {
+            display: inline-block;
+            float: left;
+            &:nth-of-type(1) {
+                width: 40px;
+                height: 88px;
+                padding-top: 24px;
+                >div {
+                    width: 40px;
+                    height: 40px;
+                    background: rgb(248, 89, 89);
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+            &:nth-of-type(2) {
+                font-size: 26px;
+                line-height: 88px;
+                color: #333333;
+                margin-left: 20px;
+                width: 580px;
+                width: 77.333333vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.couponPop {
+    width: 100%;
+    height: 890px;
+    background-color: #ffffff;
+    position: relative;
+    .popTitle {
+        height: 108px;
+        width: 100%;
+        text-align: center;
+        line-height: 108px;
+        font-size: 34px;
+        color: #333333;
+    }
+    .couponList {
+        padding: 0 14px 98px 14px;
+        width: 100%;
+        height: 780px;
+        overflow-y: scroll;
+    }
+    .popButton {
+        width: 100%;
+        height: 98px;
+        background-color: rgb(223, 175, 125);
+        line-height: 98px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 34px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.overHidden {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}

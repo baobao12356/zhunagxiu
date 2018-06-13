@@ -1,0 +1,23 @@
+.dialog{
+  display: none;
+  top:50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index:9999;
+  >div{
+    background:rgba(0,0,0,0.70);
+    border-radius:2px;
+    color:  #fff;
+    font-size: 34px;
+    padding: 16px 64px;
+    max-width: 434px;
+  }
+}
+
+.showDialog{
+  display: flex !important;
+}

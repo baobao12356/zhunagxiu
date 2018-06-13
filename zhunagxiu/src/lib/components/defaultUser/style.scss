@@ -1,0 +1,10 @@
+@import "../../scss/minxi.scss";
+
+.com-default-user-content {
+  background: url(img/user-132.png) 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}

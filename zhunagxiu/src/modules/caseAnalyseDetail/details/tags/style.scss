@@ -1,0 +1,24 @@
+html{
+  background: #f5f5f5 !important;
+}
+.tags{
+  margin-bottom: 120px;
+  padding: 32px;
+  background: #fff;
+  margin-top: 16px;
+  display: -webkit-box;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 686px;
+  -webkit-overflow-scrolling:touch;
+  >div{
+    font-size: 30px;
+    border:2px solid #e4e4e4;
+    margin-right: 32px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px;
+
+  }
+}

@@ -1,0 +1,227 @@
+@import "../../scss/minxi.scss";
+.com-page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+    display: flex;
+    width: 100%;
+    height: 98px;
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+    &.ios-iPhoneX {
+        padding-bottom: 68px;
+        height: 166px;
+    }
+    >div {
+        flex: 1;
+    }
+    p {
+        height: 100%;
+        line-height: 70px;
+        text-indent: 18px;
+        color: #898989;
+        border: 1px solid #ececec;
+        border-radius: 4px;
+    }
+    .comment-content,
+    .like-content,
+    .collect-content {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 33.3333333333%;
+    }
+    .comment {
+        position: relative;
+        display: block;
+        width: 37px;
+        height: 41px;
+        background: url(./img/ic_pingl_1.png) no-repeat;
+        background-size: contain; // padding: 9px;
+        em {
+            position: absolute;
+            left: 22px;
+            top: -15px;
+            padding: 6px 10px;
+            line-height: 1;
+            font-style: normal;
+            color: #fff;
+            background-color: #ff4c51;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+    }
+    .comment-txt,
+    .like-txt,
+    .collect-txt {
+        font-size: 20px;
+        color: #666;
+        text-align: center;
+    }
+    .comment-txt {
+        padding-top: 6px;
+    }
+    .comment-content {
+        padding-top: 12px;
+    }
+    .comment-content,
+    .collect-content {
+        span {
+            margin: auto;
+        }
+    }
+    .com-like {
+        .com-like-img {
+            display: inline-block;
+            width: 42px;
+            height: 41px;
+            background: url(./img/ic_dianz_1.png) center center no-repeat;
+            background-size: cover;
+            margin: auto;
+        }
+        &.liked .com-like-img {
+            background: url(./img/ic_dianz_2.png) center center no-repeat;
+            background-size: cover;
+        }
+    }
+    .like-content {
+        padding-top: 10px;
+        &>span {
+            margin: auto;
+        }
+    }
+    .like-txt {
+        padding-top: 9px;
+    }
+    .collect-content {
+        padding-top: 4px;
+        .com-collect {
+            padding-top: 0;
+            padding-bottom: 0;
+            height: auto;
+            &:after {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+    .designAsk {
+        margin-top: -1px;
+        height: 98px;
+        background-color: rgb(223, 175, 125);
+        text-align: center;
+        line-height: 98px;
+        color: #ffffff;
+        font-size: 34px;
+    }
+}
+
+// .com-page-footer {
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   z-index: 10000;
+//   display: flex;
+//   width: 100%;
+//   height: 98px;
+//   background-color: #fff;
+//   border-top: 1px solid #ececec;
+//   > div {
+//     flex: 1;
+//   }
+//   p {
+//     height: 100%;
+//     line-height: 70px;
+//     text-indent: 18px;
+//     color: #898989;
+//     border: 1px solid #ececec;
+//     border-radius: 4px;
+//   }
+//   .comment-content, .like-content, .collect-content {
+//     display: flex;
+//     flex-direction: column;
+//     float: left;
+//     width: 33.3333333333%;
+//   }
+//   .comment {
+//     position: relative;
+//     display: block;
+//     width: 39px;
+//     height: 43px;
+//     background: url(./img/ic_pingl_1.png) no-repeat;
+//     background-size: contain;
+//     // padding: 9px;
+//     em {
+//       position: absolute;
+//       left: 22px;
+//       top: -15px;
+//       padding: 6px 10px;
+//       line-height: 1;
+//       font-style: normal;
+//       color: #fff;
+//       background-color: #ff4c51;
+//       border: 3px solid #fff;
+//       border-radius: 20px;
+//       font-size: 16px;
+//     }
+//     // &:after {
+//     //   content: '';
+//     //   display: block;
+//     //   margin: 0 auto;
+//     //   width: 62px;
+//     //   height: 62px;
+//     //   background-repeat: no-repeat;
+//     //   background-position: 0 0;
+//     //   background-size: 100% 100%;
+//     //   background-image: url(img/ic_pingl_1.png);
+//     // }
+//   }
+//   .comment-txt,.like-txt,.collect-txt{
+//     font-size: 18px;
+//     color: #666;
+//     text-align: center;
+//   }
+//   .comment-txt{
+//     padding-top:8px;
+//   }
+//   .comment-content{
+//     padding-top:15px;
+//   }
+//   .comment-content, .collect-content {
+//     span {
+//       margin: auto;
+//     }
+//   }
+//   .com-like{
+//     .com-like-img{
+//       width: 44px;
+//       height: 39px;
+//       background: url(./img/ic_dianz_1.png) no-repeat;
+//       background-size: contain;
+//       margin:auto;
+//     }
+//     &.liked .com-like-img{
+//       background:url(./img/ic_dianz_2.png) no-repeat;
+//       background-size: contain;
+//     }
+//   }
+//   .like-content{
+//     padding-top:15px;
+//     &>span {
+//       margin: auto;
+//     }
+//   }
+//   .like-txt{
+//     padding-top:11px;
+//   }
+//   .collect-content{
+//     padding-top:4px;
+//     .com-collect{
+//       padding-top:0;
+//       padding-bottom:0;
+//       height: auto;
+//     }
+//   }
+// }

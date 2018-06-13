@@ -1,0 +1,110 @@
+//线条&边框颜色
+$bottom-line-color:#DDD;
+$gray:#C8C8C8;
+$black:#222;
+$body: #FFFFFF;
+//字体
+$PFM: "PingFang SC-Medium";
+$PFR: "PingFangSC-Regular";
+.com-page-nav .back, .com-page-nav .share, .com-page-nav .shop{
+  box-sizing: border-box;
+}
+.com-page-nav{
+  box-sizing: border-box;
+  position: relative;
+}
+
+.com-page-nav .back{
+  top:0;
+}
+.com-page-nav:nth-child(2){
+  display: none;
+}
+
+.wrap_desgin {
+    font-family: $PFR;
+    width: 100%;
+    background: $body;
+
+    overflow: hidden;
+    &.app-wrap{
+      padding-top:90px;  //有nav时
+      background-color:#fff;
+    }
+    &.ios-nav{
+      padding-top:128px;  //有nav时
+    }
+
+    &.webPadding{
+      padding-top:105px;
+    }
+    .message {
+      display: flex;
+      align-items: center;
+  }
+
+  .overHidden{
+    overflow: hidden;
+  }
+
+
+  .white_space {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+    .line_select {
+      width: 100%;
+      height: 10px;
+      margin-left: 0;
+      background: #f1f1f1;
+      border: 0 solid #E8E8E8;
+  }
+    .header {
+        .sign_list {
+            height: 96px;
+            background: #F4F5F6;
+            @extend .message;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+
+            width: 100%;
+            span {
+                display: inline-block;
+            }
+            span:nth-child(1) {
+                width: 195.8px;
+                height: 63.8px;
+                margin: 16.2px 24.2px 16px 24px;
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            span:nth-child(2) {
+                font-family: $PFR;
+                line-height: 96px;
+                font-size: 24px;
+                color: #222222;
+                letter-spacing: 0;
+            }
+        }
+
+    }
+    .section_list {
+      /*padding-top: 184px;*/
+      padding-bottom: 62px;
+
+    }
+}
+
+
+.loading{
+  display: block !important;
+}
+.overHidden{
+  overflow: hidden;
+}

@@ -1,0 +1,309 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+
+.styleDetailBox{
+  overflow-x: hidden;
+  padding-top: 0;     //无nav时
+  background-color:#fff;
+  @at-root .ios-nav{
+    padding-top:40px;  //有nav时
+  }
+}
+html,body{
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  //background-color: #fff;
+  //background-image: url("img/back.png");
+  //background-position: center;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+}
+#application{
+  height: 100%;
+}
+div[data-reactroot]{
+  height: 100%;
+  background-color:#FFF;
+  background-image: url("img/back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ageHeight{
+  height: 100%;
+  overflow: hidden;
+  padding-top: 146px;
+  //padding-top: 19.466666666666666vw;
+}
+.shadowPage{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  z-index: 499;
+  transition: all 2s;
+  div{
+    font-family:STSongti-SC-Bold;
+    color:#ffffff;
+    text-align: center;
+    font-size: 80px;
+    font-size: 10.6666666666666vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:50%;
+    margin: -31px auto 0;
+    margin: -4.13333333333333vw auto 0;
+
+    p{
+      font-size: 28px;
+      font-size: 3.73333333333333vw;
+    }
+  }
+}
+.shadowHide{
+  background: rgba(0,0,0,0);
+  z-index: -3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hide{
+  display: none;
+}
+
+.ageTitle{
+  margin: 0 auto 58px;
+  margin: 0 auto 7.733333333333333vw;
+  //width: 298.2px;
+  width: 255.6px;
+  height: 50.4px;
+  height:43.2px;
+  //height: 196.4px;
+  //height: 16.55808vw;
+  //height: 6.72vw;
+  height: 5.76vw;
+  //width: 39.76vw;
+  width: 34.08vw;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.ageBox{
+  text-align: center;
+  //background-color:#FFF;
+  padding-bottom: 40px;
+  padding-bottom: 5.333333333333333vw;
+  //background-image: url("img/back.png");
+  //background-position: center;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  >div{
+    width: 291.6px;
+    width: 38.88vw;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 35px;
+    margin-bottom: 4.666666666667vw;
+    height: 282.6px;
+    height: 37.68vw;
+  }
+  >div:nth-child(1){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/11.png");
+  }
+  >div:nth-child(2){
+    background-image: url("img/12.png");
+  }
+  >div:nth-child(3){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/13.png");
+  }
+  >div:nth-child(4){
+    background-image: url("img/14.png");
+  }
+  >div:nth-child(5){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/15.png");
+  }
+  >div:nth-child(6){
+    background-image: url("img/16.png");
+  }
+}
+
+//户型css
+.housePage{
+  background-color:#FFF;
+  padding-bottom: 40px;
+  padding-bottom: 5.333333333333333vw;
+  background-image: url("img/back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.houseTitle{
+  margin: 146px auto 58px;
+  //margin: 19.466666666666666vw auto 7.733333333333333vw;
+  //width: 252px;
+  width: 216px;
+  //height: 48.3px;
+  height: 41.4px;
+
+  //width: 33.6vw;
+  width: 28.8vw;
+  //height: 6.44vw;
+  height: 5.52vw;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.houseTypeBox{
+  text-align: center;
+  >div{
+    width: 291.6px;
+    width: 38.88vw;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    margin-bottom: 5.3333333333333vw;
+    height: 282.6px;
+    height: 37.68vw;
+  }
+  >div:nth-child(1){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/21.png");
+  }
+  >div:nth-child(2){
+    background-image: url("img/22.png");
+  }
+  >div:nth-child(3){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/23.png");
+  }
+  >div:nth-child(4){
+    background-image: url("img/24.png");
+  }
+  >div:nth-child(5){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/25.png");
+  }
+  >div:nth-child(6){
+    background-image: url("img/26.png")
+  }
+  >div:nth-child(7){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/27.png")
+  }
+  >p{
+    width: 291.6px;
+    width: 38.88vw;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+    margin-bottom: 5.3333333333333vw;
+    height: 282.6px;
+    height: 37.68vw;
+  }
+}
+
+//穿衣风格
+.clothesPage{
+  background-color:#FFF;
+  padding-bottom: 40px;
+  padding-bottom: 5.333333333333333vw;
+  background-image: url("img/back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clothesTitle{
+  margin: 146px auto 58px;
+  //margin: 19.466666666666666vw auto 7.733333333333333vw;
+  width:475.2px;
+  height:43.2px;
+  width: 63.36vw;
+  height: 5.76vw;
+  img{
+    //width:554.4px;
+    //height:50.4px;
+    //width: 73.92vw;
+    //height: 6.72vw;
+
+    width:475.2px;
+    height:43.2px;
+    width: 63.36vw;
+    height: 5.76vw;
+  }
+}
+.clothesBox{
+  text-align: center;
+  >div{
+    width: 291.6px;
+    width: 38.88vw;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    margin-bottom: 5.3333333333333vw;
+    height: 282.6px;
+    height: 37.68vw;
+  }
+  >div:nth-child(1){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/31.png");
+  }
+  >div:nth-child(2){
+    background-image: url("img/32.png");
+  }
+  >div:nth-child(3){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/33.png");
+  }
+  >div:nth-child(4){
+    background-image: url("img/34.png");
+  }
+  >div:nth-child(5){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/35.png");
+  }
+  >div:nth-child(6){
+    background-image: url("img/36.png");
+  }
+  >div:nth-child(7){
+    margin-right: 50px;
+    margin-right: 6.666666666666666vw;
+    background-image: url("img/37.png")
+  }
+  >div:nth-child(8){
+    background-image: url("img/38.png")
+  }
+}
+.overHidden{
+  overflow: hidden;
+}
+

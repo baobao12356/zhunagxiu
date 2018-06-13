@@ -1,0 +1,87 @@
+.company-row-comp {
+    position: relative;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    &:last-child {
+        border: none;
+    }
+    .status {
+        font-size: 22px;
+        padding: 10px;
+        color: rgb(255, 69, 74);
+        background-color: rgb(255, 214, 216);
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .onStatus {
+        background-color: rgb(245, 245, 245);
+        color: #999;
+    }
+    .company {
+        display: -webkit-flex;
+        display: flex;
+        .company-logo {
+            flex: 1;
+            padding: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .company-info {
+            flex: 2;
+            padding: 20px 0 0 45px;
+            .company-name {
+                font-size: 32px;
+                color: #333;
+                margin-bottom: 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+            .company-overallScore {
+                color: rgb(223, 175, 125);
+                font-size: 26px;
+                margin-bottom: 15px;
+            }
+            .company-honorNum {
+                color: #666;
+                font-size: 26px;
+                margin-bottom: 15px;
+            }
+            .company-tags {
+                color: #999;
+                font-size: 24px;
+                span {
+                    .cut {
+                        padding: 0 10px;
+                        display: inline-block;
+                        height: 20px;
+                        overflow: hidden;
+                    }
+                    &:last-child {
+                        .cut {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .company-caseImg {
+        width: 136px;
+        height: 60px;
+        background-color: rgb(223, 175, 125);
+        font-size: 24px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 60px;
+        position: absolute;
+        right: -32px;
+        top: 120px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+}

@@ -1,0 +1,378 @@
+//#application{
+//  overflow-x: hidden;
+//}
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+video {
+    width: 100%;
+    height: 420px;
+    background: #333;
+    background-position: center;
+    background-size: 40% 50%;
+    background-repeat: no-repeat;
+}
+
+.showHide {
+    display: none !important;
+}
+
+.pageWapper {
+    background: #fff;
+    padding-top: 0;
+    margin-bottom: 72px;
+    &.app-wrap {
+        padding-top: 90px; //有nav时
+        background-color: #fff;
+    }
+    &.ios-nav {
+        padding-top: 128px; //有nav时
+    }
+    &.webPadding {
+        padding-top: 105px;
+    }
+    &.ios-iPhoneX {
+        padding-bottom: 68px;
+    }
+    >div {
+        background: #fff;
+    }
+    .com-app-download-tip {
+        background: #000;
+    }
+    .footer {
+        //display: flex;
+        //border-top:1px solid #f5f5f5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        z-index: 998;
+        &.ios-iPhoneX {
+            padding-bottom: 68px;
+            height: 166px;
+        }
+        >div {
+            float: right;
+            width: 100%;
+            height: 100px;
+            font-family: PingFang-SC-Regular;
+            font-size: 34px;
+            color: #fff;
+            background-color: #dfaf7d;
+            text-align: center;
+            line-height: 100px;
+        }
+    }
+    .corpBlock {
+        width: 100%;
+        width: 100vw;
+        padding-bottom: 12px;
+        background: #f1f1f1;
+        position: relative;
+        >div {
+            padding-left: 28px;
+            padding-left: 3.7333333vw;
+            background: #fff;
+        }
+        &:nth-last-of-type(1) {
+            background: red;
+        }
+        &:last-child {
+            background: red;
+        }
+    }
+    .blockPosition {
+        position: fixed;
+        top: 87px;
+        z-index: 501;
+        height: 87px;
+        padding: 0 28px;
+        padding: 0 3.733333vw;
+        width: 100vw;
+        line-height: 82px;
+        font-size: 30px;
+        color: #999;
+        border-bottom: 1px solid #e1e1e1;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        overflow: hidden;
+        >div {
+            >div {
+                width: 100%;
+                display: none;
+                i {
+                    display: block;
+                    width: 20px;
+                    height: 4px;
+                    background-color: #333;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .blockPositionShow {
+            color: #333;
+            >div {
+                display: block;
+            }
+        }
+    }
+    .banner {
+        background: #e4e4e4;
+        margin-top: 0;
+        width: 100%;
+        height: 420px;
+        background: #e4e4e4;
+        overflow: hidden;
+    }
+    #sale {
+        position: absolute;
+        width: 672px; //height: 60px;
+        height: 80px;
+        z-index: 2;
+        right: 0; //margin-top: 380px;
+        bottom: 12px;
+        opacity: 0;
+    }
+    #shops {
+        position: absolute;
+        width: 220px;
+        height: 60px;
+        z-index: 2;
+        right: 0;
+        margin-top: 280px;
+        opacity: 0;
+    }
+    .bottomInfoBtn {
+        float: right;
+        width: 100%;
+        height: 100px;
+        font-family: PingFang-SC-Regular;
+        font-size: 34px;
+        color: #fff;
+        background-color: #dfaf7d;
+        text-align: center;
+        line-height: 100px;
+        z-index: 100001;
+        position: fixed;
+        bottom: 0;
+        display: none;
+    }
+    .bottomInfoBtntrue {
+        display: block;
+    }
+    .bottomInfoBtnfalse {
+        display: none;
+    }
+    .blockNothing {
+        height: 84px !important;
+        line-height: 84px;
+        font-size: 24px;
+        color: #666;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 722px !important;
+        width: 96.266666vw !important;
+    }
+    .videoImg {
+        width: 100%;
+        width: 100vw;
+        height: 100%;
+    }
+    .videoPlay {
+        display: block;
+        position: absolute;
+        width: 102px;
+        height: 102px;
+        width: 13.6vw;
+        height: 13.6vw;
+        background-image: url("../img/play.png") !important;
+        background-size: 100% 100% !important;
+        margin-left: 326px;
+        margin-left: 43.466666vw;
+        margin-top: 162px;
+        margin-top: 21.6vw;
+    }
+    .video-js {
+        width: 750px;
+        width: 100vw;
+        height: 420px;
+    }
+    .videoImg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        width: 100vw;
+        height: 420px;
+        height: 56vw;
+        background-size: 100% 100% !important;
+        background: #333;
+    }
+    .aboutUs {
+        height: 102px;
+        font-size: 28px;
+        line-height: 102px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .aboutUsImg {
+        width: 100%;
+        width: 100vw;
+        height: 420px;
+        height: 56vw;
+        background-size: 100% 100% !important;
+    }
+}
+
+.corpScoreInfo {
+    width: 100%;
+    height: 240px;
+    padding: 28px 0 28px;
+    display: flex;
+    display: -webkit-flex;
+    .scoreLeft {
+        text-align: center;
+        width: 262px;
+        height: 100%;
+        padding-top: 20px;
+        >div {
+            &:nth-of-type(1) {
+                color: #333333;
+                font-size: 24px;
+            }
+            &:nth-of-type(2) {
+                border-right: 1px solid #f1f1f1;
+                color: #dfaf7d;
+                font-size: 26px;
+                padding: 20px 0;
+                >span {
+                    font-size: 52px;
+                }
+            }
+            &:nth-of-type(3) {
+                color: #666666;
+                font-size: 20px;
+            }
+        }
+    }
+    .scoreRight {
+        padding-top: 16px;
+        padding-left: 16px;
+        >div {
+            display: flex;
+            display: -webkit-flex;
+            margin-bottom: 25px;
+            .title {
+                color: #999;
+                font-size: 26px;
+                margin-right: 20px;
+                margin-top: 4px;
+            }
+            .evaluateStar {
+                color: #333;
+                font-size: 22px;
+            }
+        }
+        .evaluateStar {
+            .score {
+                font-size: 28px;
+                color: #666666;
+                line-height: 36px;
+                .star {
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/starts.png) center center no-repeat;
+                    background-size: cover;
+                }
+                .halfStar {
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/halfStar.png) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .corpOther {
+        height: 96px;
+    }
+}
+
+.otherServices {
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding-left: 28px;
+    background-color: #fff;
+    &:nth-of-type(1)>div {
+        border-bottom: 1px solid #e4e4e4;
+    }
+    span {
+        line-height: 88px;
+        &:nth-of-type(1) {
+            color: #333;
+            font-size: 28px;
+        }
+        &:nth-of-type(2) {
+            color: #999;
+            font-size: 28px;
+            padding: 0 14px;
+        }
+        &:nth-of-type(3) {
+            color: #999;
+            font-size: 22px;
+        }
+    }
+}
+
+.corpOther {
+    float: right !important;
+    margin-right: 28px;
+    width: 16px;
+    height: 84px;
+    background-image: url("../img/more.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.com-rich-text {
+    font-size: 28px;
+    color: #333;
+    line-height: 48px;
+    text-align: justify;
+    padding: 24px 28px 24px 0;
+    width: 100%;
+    p {
+        margin-bottom: 20px;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 34px;
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1;
+    }
+}
+
+.banner {
+    width: 100vw !important;
+}
+
+.overHidden {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.am-toast-text {
+    font-size: 24px;
+}

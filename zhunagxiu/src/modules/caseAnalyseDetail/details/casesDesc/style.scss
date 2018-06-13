@@ -1,0 +1,42 @@
+.caseDesc{
+  background: #fff;
+  width: 100%;
+  margin-top: -4px;
+  >h3{
+    color: #444;
+    font-size: 28px;
+    font-family: "PingFang SC-Medium";
+    line-height: 84px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left: 32px;
+  }
+  >div{
+    padding: 32px 32px 0px 32px;
+    overflow: hidden;
+    //height: 78px;
+    font-size: 26px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  >input{
+    position: absolute;
+    opacity: 0;
+  }
+  >label{
+    width: 45px;
+    height:45px;
+    display: block;
+    margin: 20px auto;
+    background: url("../../../../imgs/common/down.png") no-repeat;
+    background-size: 100%;
+  }
+}
+#more:checked ~ .content{
+  overflow:auto;
+  display: block;
+}
+#more:checked ~ .content+label{
+  transform:rotate(180deg)
+}

@@ -1,0 +1,175 @@
+@import "../../../../lib/scss/minxi.scss";
+.fix-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background-color: #fff;
+    &.ios-nav {
+        height: 128px;
+        padding-top: 40px;
+    }
+    &.ios-iPhoneX {
+        height: 176px;
+        padding-top: 88px
+    }
+    &.fixed {
+        position: fixed;
+        background: none;
+        box-shadow: none;
+        .com-page-nav {
+            display: flex !important;
+            flex-direction: row;
+            justify-content: space-between !important;
+            background: none;
+            box-shadow: none;
+        }
+        .back {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .4);
+            background-size: .8rem auto !important;
+            margin-left: .21333rem;
+            &:before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: url(img/back_white.png) no-repeat center center;
+                background-size: .8rem auto !important;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .share {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .4);
+            margin-right: .21333rem;
+            &:before {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: url(img/share_white.png) no-repeat center center;
+                background-size: .8rem auto !important;
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+.com-page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    background-color: #fff; //box-shadow: 0 1px rgba(0,0,0,.1);
+    >div {
+        width: 100%;
+        line-height: 88px;
+        text-align: center;
+        font-size: 34px;
+    }
+    .back,
+    .share,
+    .shop {
+        //position: absolute;
+        bottom: 0;
+        width: 80px;
+        height: 80px; //padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat; //background-position: 0 0;
+            background-size: cover !important;
+        }
+    }
+    .back {
+        left: 0;
+        &:before {
+            background-image: url(img/back.png);
+        }
+    }
+    .share {
+        right: 0;
+    }
+    .shop {
+        right: 90px;
+        &:before {
+            background-image: url(img/shop.png);
+        }
+    }
+}
+
+/*推荐下载*/
+
+// .com-app-download-tip {
+//   display: flex;
+//   height: 105px;
+//   width: 100%;
+//   background-color: #000;
+//   .logo-container {
+//     width: 140px;
+//     padding: 12px 30px;
+//     &:before {
+//       content: "";
+//       display: block;
+//       width: 80px;
+//       height: 80px;
+//       background: url(img/logo.png) 0 0 no-repeat;
+//       background-size: 100%;
+//     }
+//   }
+//   .info-container {
+//     flex: 1;
+//     padding-top: 18px;
+//     color: #fff;
+//     h5 {
+//       margin-bottom: 12px;
+//     }
+//     h2 {
+//       font-size: 32px;
+//     }
+//   }
+//   .btn-container {
+//     width: 170px;
+//     padding-right: 10px;
+//     padding-top: 18px;
+//     a {
+//       width: 100%;
+//       height: 70px;
+//       line-height: 70px;
+//       color: #fff;
+//       text-align: center;
+//       font-size: 30px;
+//       border-radius: 4px;
+//       background-color: $blue;
+//       display: inherit;
+//       //line-height: 70px;
+//     }
+//   }
+//   .close-container {
+//     width: 100px;
+//     &:before {
+//       content: '';
+//       display: block;
+//       width: 44px;
+//       height: 44px;
+//       margin: 30px auto auto;
+//       background: url(img/close.png) 0 0 no-repeat;
+//       background-size: 100%;
+//     }
+//   }
+//   .wx-tip {
+//   }
+// }

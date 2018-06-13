@@ -1,0 +1,82 @@
+.askBox {
+  margin-top: 56px;
+  .infoBox {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .infoTitle {
+      font-size: 30px;
+      line-height: 42px;
+      font-family: STSongti-SC-Regular;
+      color: rgb(68, 68, 68);
+      margin-bottom: 20px;
+    }
+    .infoContent {
+      width: 584px;
+      height: 84px;
+      border-radius: 4px;
+      border: 1px solid rgb(180, 180, 180);
+      padding: 0 20px;
+      box-sizing: border-box;
+      position: relative;
+      input, select{
+        width: 560px;
+        height: 80px;
+        font-size: 28px;
+        border: none;
+        appearance: none;
+        background-color: rgb(252, 250, 249);
+        //margin-left: 20px;
+      }
+      select {
+        background-color: rgb(254, 252, 251);
+      }
+      .triple{
+        position: absolute;
+        top: 36px;
+        right: 24px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 12px solid #999999;
+      }
+      .areaUnit {
+        width: 34px;
+        height: 40px;
+        font-size: 34px;
+        line-height: 40px;
+        color: #999999;
+        position: absolute;
+        right: 16px;
+        top: 20px;
+      }
+    }
+  }
+  .btnBox {
+    width: 100%;
+    //padding: 0 94px 0 94px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    .confirmBtn {
+      margin-left: 94px;
+      width: 400px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: rgb(223, 173, 125);
+      text-align: center;
+      color: #ffffff;
+      font-size: 34px;
+      line-height: 80px;
+    }
+    .companyInfo {
+      width: 100%;
+      text-align: center;
+      margin-top: 8px;
+      font-size: 24px;
+      line-height: 40px;
+      color: #333333;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.caseDetails {
+    >h3 {
+        color: #444;
+        font-size: 28px;
+        font-family: "PingFang SC-Medium";
+        line-height: 84px;
+        padding-left: 32px;
+        margin-bottom: 20px;
+    }
+    .caseDetails_title {
+        color: #444;
+        font-size: 28px;
+        font-family: "PingFang SC-Medium";
+        line-height: 84px;
+        padding-left: 32px;
+        margin-bottom: 20px;
+        b {
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: #444;
+            margin-right: 13px;
+        }
+    }
+    .picBox {
+        h3 {
+            text-align: left;
+            margin-top: 0px;
+            padding-top: 12px;
+        }
+    }
+}
+
+.caseDetails_wap {
+    padding-bottom: 100px;
+}

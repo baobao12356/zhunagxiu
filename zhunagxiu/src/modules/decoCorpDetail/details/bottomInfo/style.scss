@@ -1,0 +1,109 @@
+.bottomInfo{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  .dialogBox{
+    padding-bottom: 150px;
+    background: #fff !important;
+    width: 100%;
+    z-index: 999;
+    .dialogName{
+      text-align: center;
+      font-size: 40px;
+      padding-top: 48px;
+      margin-bottom: 64px;
+      >span{
+        display: block;
+        &:nth-of-type(1){
+          float: left;
+          width: 100%;
+        }
+        &:nth-of-type(2){
+          float: right;
+          right: 30px;
+          position: absolute;
+          width: 44px;
+          height: 44px;
+          background: url(../../img/close.png) 0 0 no-repeat;
+          background-size: 100%;
+          display: none;
+        }
+
+      }
+    }
+
+    .dialogContent{
+
+      padding: 0 30px;
+      .saleBoxs{
+        .diallogTilte{
+          margin-bottom: 22px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          >:nth-child(2){
+            font-size: 30px;
+            margin-left: 16px;
+          }
+          .saleIcon{
+            width: 40px;
+            height: 40px;
+            background: #cc1d25;
+            text-align: center;
+            line-height: 40px;
+            font-size: 24px;
+            color:#fff;
+          }
+        }
+        .dialogDesc{
+          font-size: 24px;
+          color:#666;
+          margin-left: 56px;
+          text-align: justify;
+          line-height: 1.2;
+        }
+      }
+
+      .address{
+        max-height: 800px;
+        overflow-y:scroll;
+        .adrItem{
+          margin-bottom: 40px;
+          >:nth-child(1){
+            font-size: 30px;
+            margin-bottom: 16px;
+          }
+          >:nth-child(2){
+            font-size: 24px;
+            color: #666;
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+  }
+}
+.bottomInfotrue{
+  display: block;
+}
+.bottomInfofalse{
+  display: none;
+}
+
+
+.shadow{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+  top:0;
+  z-index: -1;
+
+
+}

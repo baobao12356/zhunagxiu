@@ -1,0 +1,330 @@
+@charset "utf-8";
+@import "../../lib/scss/base";
+
+.iphoneX{
+  padding-top: 0% !important;
+}
+
+
+
+//背景铺满居中
+.backgroundImgCls{
+  background-size: cover !important;
+  background-position: center !important;
+}
+//居中
+.centerCls{
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+}
+
+.styleDetailBox{
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //padding-bottom: 100px;
+  overflow-x: hidden;
+  padding-top: 90px;     //无nav时
+  background-color:#fff;
+  @at-root .ios-nav{
+    padding-top:130px;  //有nav时
+  }
+}
+
+
+html,body{
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+#application{
+  height: 100%;
+}
+div[data-reactroot]{
+  height: 100%;
+  background-color:#F5F5F5;
+  //background-image: url("img/back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.isIphoneX{
+  margin-top: 150px !important;
+}
+
+.choiceStyleBox{
+  //margin-top: -20px;
+  display: none;
+  padding: 0 58px;
+  //页数
+  .cPage{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    >div{
+      >:nth-child(1){
+        font-size: 56px;
+      }
+      >:nth-child(2){
+        font-size: 36px;
+      }
+    }
+
+  }
+  //问题
+  .question{
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  //选项
+  .choices{
+    position: relative;
+    @extend .centerCls;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    >div{
+      @extend .backgroundImgCls;
+      border-radius: 4px;
+      margin-top: 24px;
+      width: 308px;
+      height: 234px;
+      background: red;
+      >span{
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+        display: block;
+        z-index: 111;
+        top:-64px;
+        left:242px;
+        &:before{
+          position: relative;
+          //background: red;
+          display: inline-block;
+          content: '';
+          width: 120px;
+          height: 120px;
+          left: -50px;
+          top:-50px;
+
+        }
+      }
+    }
+  }
+
+  @at-root article:last-of-type{
+    .choices{
+      justify-content: space-around !important;
+      >div{
+        width: 216px !important;
+        height: 216px !important;;
+        background-size: 100% 100% !important;
+        >span{
+          top:168px;
+          left:168px;
+          border:1px solid #e0e0e0 !important;
+        }
+      }
+    }
+    //手机提交
+    .userPhone{
+      .message{
+        font-size: 36px;
+        color: #333;
+        margin: 64px 0 20px 0;
+      }
+      .inputPhone{
+        width: 100%;
+        input {-webkit-appearance:none !important; /*去除input默认样式*/}
+        ::-webkit-input-placeholder { /* WebKit browsers */
+          font-size:28px;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          font-size:28px;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          font-size:28px;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+          font-size:28px;
+        }
+        input{
+          padding: 24px 28px;
+          font-size: 28px;
+          width: inherit;
+          border: 2px solid #e0e0e0;
+        }
+      }
+    }
+  }
+}
+
+
+
+//下一题按钮
+.choiceBtns{
+  text-align: center;
+  line-height: 88px;
+  font-size: 34px;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  margin-top: 40px;
+  padding: 0 58px;
+  justify-content: space-between;
+  >div{
+    width: inherit;
+  }
+  .nextBtn{
+    background:#dfaf7d;
+    border-radius:4px;
+    color:#fff;
+  }
+  .middle{
+    width: 38px !important;
+  }
+  .prevBtn{
+    color: #dfaf7d;
+    border:1px solid #dfaf7d;
+    border-radius:4px;
+    box-sizing: border-box;
+  }
+
+  .android_border{
+    border-radius:8px !important;
+  }
+
+  .android{
+    border:3px solid #dfaf7d !important;
+    @extend .android_border
+  }
+
+
+
+
+
+}
+
+
+.nowPage{
+  display: block !important;
+}
+
+
+.isChecked{
+  &:after{
+    content: "";
+    width: 34px;
+    height: 24px;
+    background:url('./img/Check@2x.png') no-repeat;
+    @extend .backgroundImgCls;
+    display: inline-block;
+    position: absolute;
+    @extend .centerCls
+  }
+  background-color: #dfaf7d !important;
+
+}
+
+
+
+//相册
+.album{
+  //padding-top: 50%;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .albumPage{
+    margin-top: 66px;
+    color: #fff;
+      >:nth-child(1){
+        font-size: 44px;
+       }
+      >:nth-child(2){
+        font-size: 32px;
+      }
+  }
+}
+
+
+.dis{
+  display: none !important;
+}
+
+.slider{
+  position: relative;
+  z-index: 999;
+}
+
+.albumClose{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.closeArea{
+  position: fixed;
+  z-index:99;
+  width: 100%;
+  height: 100%;
+  top:0;
+}
+
+
+.albums{
+  position: absolute;
+  @extend .centerCls;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .albumBox{
+    width: 100%;
+    //height: 400px;
+    //overflow-x: scroll;
+    //overflow-y: hidden;
+    //-webkit-overflow-scrolling: touch;
+    //display: flex;
+    //flex-direction: row;
+    //max-height: 400px;
+    overflow: hidden;
+    .items{
+      width: 4500px;
+      height: 400px;
+      position: relative;
+      img{
+        display: block;
+        float: left;
+        width: 750px;
+      }
+    }
+
+  }
+
+}
+
+
+.com-default-img-content{
+  background-color: transparent !important;
+}
+
+

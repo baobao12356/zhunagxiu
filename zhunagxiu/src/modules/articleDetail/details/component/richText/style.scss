@@ -1,0 +1,133 @@
+
+@import "../../../../../lib/scss/minxi.scss";
+
+.com-rich-text {
+  padding: 0 32px;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 52px;
+  color: #333;
+  * {
+    line-height: 1.5!important;
+    word-break: break-all!important;
+    font-size: 30px!important;
+    width: 100%!important;
+  }
+
+  hr {
+    max-width: 100%!important;
+  }
+
+  h1 {
+    font-size: 48px!important;
+  }
+
+  h2 {
+    font-size: 44px!important;
+  }
+
+  h3 {
+    font-size: 40px!important;
+  }
+
+  h4 {
+    font-size: 36px!important;
+  }
+
+  h5 {
+    font-size: 34px!important;
+  }
+
+  a {
+    display: inline;
+    color: #3c78e8;
+    text-decoration: underline;
+  }
+
+  img {
+    display:block;margin:0 auto;
+    margin-top: 34px;
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+}
+@mixin txtEclip($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+.img_dedfault {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.bacgroiund_white {
+  background: #fff;
+}
+
+.goods_style{
+
+      padding: 0 30px 24px 30px ;
+      // padding-top: 24px;
+      // margin-bottom: 24px;
+       .goods_all_stytle{
+        border:1px solid #e1e1e1;
+         border-radius: 4px;
+         padding:  30px 24px 30px 24px ;
+         display: flex;
+         flex-direction: row;
+         .goods_picturl_left{
+           background: rgb(244,244,244);
+           width: 220px;
+           height: 220px;
+           margin-right: 26px;
+           flex-shrink: 0;
+           overflow: hidden;
+           img{
+             @extend .img_dedfault;
+           }
+         }
+         .goods_product_right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .pdt_name{
+              font-size: 30px;
+              color: #333;
+              line-height: 42px;
+              @include txtEclip(2);
+            }
+            .product_second_name{
+              margin-top: 8px;
+              font-size: 26px;
+              color: #999;
+              line-height: 38px;
+              @include txtEclip(1);
+
+            }
+            .product_price{
+                display: flex;
+                align-items: center;
+               .product_sale_price{
+                font-size: 34px;
+                color: rgb(255,69,74);
+                line-height: 28px;
+               }
+               .product_online_price{
+                font-size: 22px;
+                color: rgb(153,153,153);
+                line-height: 24px;
+                  margin-left:16px;
+                  text-decoration:line-through;
+               }
+            }
+         }
+
+       }
+}

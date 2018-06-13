@@ -1,0 +1,246 @@
+//#application{
+//  overflow-x: hidden;
+//}
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+video {
+    width: 100%;
+    height: 420px;
+    background: #333;
+    background-position: center;
+    background-size: 40% 50%;
+    background-repeat: no-repeat;
+}
+
+.showHide {
+    display: none !important;
+}
+
+.pageWapper {
+    background: #fff;
+    padding-top: 0;
+    &.app-wrap {
+        padding-top: 90px; //有nav时
+        background-color: #fff;
+    }
+    &.ios-nav {
+        padding-top: 128px; //有nav时
+    }
+    &.webPadding {
+        padding-top: 105px;
+    }
+    >div {
+        background: #fff;
+    }
+    .com-app-download-tip {
+        background: #000;
+    }
+    .footer {
+        //display: flex;
+        //border-top:1px solid #f5f5f5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        z-index: 10000;
+        &.ios-iPhoneX {
+            padding-bottom: 68px;
+            height: 166px;
+        }
+        >div {
+            float: right;
+            width: 100%;
+            height: 100px;
+            font-family: PingFang-SC-Regular;
+            font-size: 34px;
+            color: #fff;
+            background-color: #dfaf7d;
+            text-align: center;
+            line-height: 100px;
+        }
+    }
+    .instituteBlock {
+        width: 100%;
+        width: 100vw;
+        padding-bottom: 12px;
+        background: #f1f1f1;
+        >div {
+            padding-left: 28px;
+            padding-left: 3.7333333vw;
+            background: #fff;
+        }
+        &:nth-last-of-type(1) {
+            padding-bottom: 0;
+        }
+    }
+    .lastBlockDiv {
+        min-height: 480px;
+    }
+    .banner {
+        background: #e4e4e4;
+        margin-top: 0;
+        width: 100%;
+        height: 420px;
+        background-size: cover !important;
+        background-image: url('../img/banner1.png');
+        overflow: hidden;
+    }
+    #sale {
+        position: absolute;
+        width: 672px;
+        height: 60px;
+        z-index: 2;
+        right: 0;
+        margin-top: 206px;
+        opacity: 0;
+    }
+    #shops {
+        position: absolute;
+        width: 220px;
+        height: 60px;
+        z-index: 2;
+        right: 0;
+        margin-top: 104px;
+        opacity: 0;
+    }
+    .bottomInfoBtn {
+        float: right;
+        width: 100%;
+        height: 100px;
+        font-family: PingFang-SC-Regular;
+        font-size: 34px;
+        color: #fff;
+        background-color: #dfaf7d;
+        text-align: center;
+        line-height: 100px;
+        z-index: 100001;
+        position: fixed;
+        bottom: 0;
+        display: none;
+    }
+    .bottomInfoBtntrue {
+        display: block;
+    }
+    .bottomInfoBtnfalse {
+        display: none;
+    }
+    .blockNothing {
+        height: 84px !important;
+        line-height: 84px;
+        font-size: 24px;
+        color: #666;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 722px !important;
+        width: 96.266666vw !important;
+    }
+    .videoImg {
+        width: 100%;
+        width: 100vw;
+        height: 100%;
+    }
+    .videoPlay {
+        display: block;
+        position: absolute;
+        width: 102px;
+        height: 102px;
+        width: 13.6vw;
+        height: 13.6vw;
+        background-image: url("../img/play.png") !important;
+        background-size: 100% 100% !important;
+        margin-left: 326px;
+        margin-left: 43.466666vw;
+        margin-top: 162px;
+        margin-top: 21.6vw;
+    }
+    .video-js {
+        width: 750px;
+        width: 100vw;
+        height: 420px;
+    }
+    .videoImg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        width: 100vw;
+        height: 420px;
+        height: 56vw;
+        background-size: 100% 100% !important;
+        background: #000;
+    }
+    .aboutUs {
+        height: 102px;
+        font-size: 28px;
+        line-height: 102px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .aboutUsImg {
+        width: 100%;
+        width: 100vw;
+        height: 420px;
+        height: 56vw;
+        background-size: 100% 100% !important;
+    }
+}
+
+.instituteOther {
+    float: right !important;
+    margin-right: 28px;
+    width: 16px;
+    height: 88px;
+    background-image: url("../img/more.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.videoBlock {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+    overflow: hidden;
+    background: transparent !important;
+    aside>div {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        width: 100%;
+        height: 460px;
+        margin-top: -6px;
+    }
+}
+
+.instituteNothing {
+    width: 694px;
+    height: 498px;
+    background-image: url("../img/nothing.png");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position-x: center;
+}
+
+.com-rich-text {
+    font-size: 28px;
+    color: #333;
+    line-height: 48px;
+    text-align: justify;
+    padding: 24px 28px 24px 0;
+    width: 100%;
+    p {
+        margin-bottom: 20px;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 34px;
+        width: 100% !important;
+        height: auto !important;
+        opacity: 1;
+    }
+}

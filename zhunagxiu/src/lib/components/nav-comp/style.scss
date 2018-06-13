@@ -1,0 +1,54 @@
+@import "./iconfont.css";
+// 默认头部可用的图标: 返回(icon-back) & 分享(icon-share)
+
+$headerHeight: 88px;
+$headerHeightIOS: 128px;
+$headerHeightIOSX: 176px;
+
+.nav-comp {
+  // height: $headerHeight;
+  .am-navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    color: #000;
+    .am-navbar-title {
+      color: #000;
+    }
+  }
+
+  &.transparent {
+    .am-navbar {
+      color: #fff;
+      .am-navbar-title {
+        color: #fff;
+      }
+    }
+
+    &.over-critical {
+      .am-navbar {
+        color: #000;
+        .am-navbar-title {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &.ios-nav {
+    .am-navbar {
+      padding-top: 40px;
+      height: $headerHeightIOS;
+    }
+  }
+
+  &.iphone-x {
+    .am-navbar {
+      padding-top: 88px;
+      height: $headerHeightIOSX;
+    }
+  }
+  .icon-back::before {
+    font-size: 40px;
+  }
+}

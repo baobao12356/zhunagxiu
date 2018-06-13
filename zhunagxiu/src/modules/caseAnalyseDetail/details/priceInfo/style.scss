@@ -1,0 +1,49 @@
+.priceInfo {
+    font-size: 28px;
+    background: #fff;
+    padding: 40px 24px 80px 24px;
+    .pItop {
+        color: #444;
+        line-height: 40px;
+        .price {
+            color: #439df7;
+            font-size: 40px;
+            display: inline-block;
+            float: right;
+        }
+    }
+    .pIdown {
+        margin-top: 10px;
+        width: 100%;
+        color: #999;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .case_title {
+        font-family: PingFangSC-Regular;
+        font-size: 40px;
+        color: #333333;
+        text-align: left;
+        line-height: 1.5;
+        margin-bottom: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-weight: 700;
+    }
+    .case_tag {
+        b {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 24px;
+            color: #999;
+            margin-right: 10px;
+        }
+        .cate {
+            font-size: 28px;
+            vertical-align: baseline;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import "../../../lib/scss/base";
+
+.deco-order {
+  background: rgb(241, 241, 241);
+
+  .deco-order-detail {
+
+    &.app-wrap {
+      padding-top: 90px; //有nav时
+    }
+    &.ios-nav {
+      padding-top: 90px+$iphoneTOP; //有nav时
+    }
+    &.webPadding {
+      padding-top:90px;
+    }
+    &.iPhone-x{
+      padding-top: 90px+$iphoneXTOP;
+    }
+
+    .banner {
+      background: url("./img/bg.png") center no-repeat rgb(223, 175, 125);
+      background-size: contain !important;
+      width: 100%;
+      height: 160px;
+      position: relative;
+
+      .banner-opacity1 {
+        width: 100%;
+        height: 123px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        .banner-todo {
+          font-size: 34px;
+          line-height: 46px;
+          padding-left: 30px;
+          color: #FFF;
+        }
+
+        .banner-opacity2 {
+          width: 100%;
+          height: 83px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          .banner-prepay {
+            font-size: 24px;
+            line-height: 36px;
+            padding-left: 30px;
+            margin-top: 14px;
+            letter-spacing: 0;
+            color: #FFF;
+          }
+        }
+      }
+    }
+
+    .deco-order-steps {
+      padding: 34px 30px 0 34px;
+      background: #FFF;
+      margin-top: 12px;
+      border-bottom: 2px solid rgb(244, 244, 244);
+
+      .am-steps-item-description {
+        float: right;
+      }
+
+      .am-steps-item-tail {
+        top: 20px;
+        padding: 0;
+        left: 20px;
+      }
+
+      .am-steps-item-tail:after {
+        background: rgb(231, 231, 231);
+        left: 0;
+      }
+
+      .am-steps-item-icon {
+        width: 40px;
+        height: 40px;
+        background-size: contain !important;
+        border: none;
+        z-index: 2;
+
+        .am-steps-icon {
+          color: transparent;
+        }
+      }
+
+      .am-steps-item-await {
+        .am-steps-item-title, .am-steps-item-description {
+          color: #999;
+          font-family: PingFangSC-Regular;
+          font-weight: normal;
+        }
+
+        .am-steps-item-icon {
+          background: url("./img/complete.png") center no-repeat;
+        }
+      }
+
+      .am-steps-item-finish {
+        .am-steps-item-title, .am-steps-item-description {
+          color: #333;
+          font-family: PingFangSC-Regular;
+          font-weight: normal;
+        }
+
+        .am-steps-item-icon {
+          background: url("./img/pay.png") center no-repeat;
+        }
+      }
+    }
+
+    .amount-div {
+      background: #FFF;
+      padding: 30px 30px 0;
+
+      .amount-one {
+        font-family: PingFangSC-Regular;
+        color: #999;
+        font-size: 30px;
+        line-height: 38px;
+        padding-bottom: 30px;
+        letter-spacing: 0;
+
+        .amount-o-left {
+          display: inline-block;
+        }
+
+        .amount-o-right {
+          float: right;
+        }
+      }
+    }
+
+    .amount-paid {
+      background: rgb(245, 245, 245);
+      padding: 30px;
+      font-size: 30px;
+      line-height: 38px;
+
+      .amount-p-left {
+        color: #333;
+        display: inline-block;
+      }
+
+      .amount-p-right {
+        float: right;
+        color: rgb(255, 69, 74);
+      }
+    }
+
+    .amount-times {
+      padding: 30px 30px 0;
+      background: #FFF;
+
+      div {
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 36px;
+        margin-bottom: 10px;
+        color: #999;
+        font-family: PingFangSC-Regular;
+      }
+    }
+  }
+}

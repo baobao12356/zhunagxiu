@@ -1,0 +1,89 @@
+.couponItem {
+  width: 722px;
+  height: 212px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &.get {
+    background: url(./img/get.png) center center no-repeat;
+    background-size: cover;
+  }
+  &.getted {
+    background: url(./img/getted.png) center center no-repeat;
+    background-size: cover;
+  }
+  &.getEnd {
+    background: url(./img/getEnd.png) center center no-repeat;
+    background-size: cover;
+  }
+  .itemLeft {
+    width: 516px;
+    padding-left: 22px;
+    text-align: left;
+    .couponName {
+      width: 488px;
+      height: 48px;
+      margin-bottom: 24px;
+      color: rgb(225, 69, 74);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      .money {
+        font-family: PingFang-SC-Medium;
+        font-size: 52px;
+        line-height: 48px;
+      }
+      .disType {
+        font-size: 22px;
+        letter-spacing: 2px;
+      }
+      .couponTitle {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+    .couponCondition {
+      font-size: 24px;
+      line-height: 26px;
+      color: #999999;
+      margin-bottom: 11px;
+    }
+    .coupontime {
+      font-size: 24px;
+      line-height: 26px;
+      color: #999999;
+    }
+  }
+  .itemRight {
+    width: 174px;
+    height: 180px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 180px;
+    position: relative;
+    .rightText {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .getType {
+      position: absolute;
+      display: block;
+      width: 108px;
+      height: 108px;
+      top: 36px;
+      right: 80px;
+      &.gettedCoupon {
+        background: url(./img/geted_circle.png) center center no-repeat;
+        background-size: cover;
+      }
+      &.getEndCoupon {
+        background: url(./img/getEnd_circle.png) center center no-repeat;
+        background-size: cover;
+      }
+    }
+
+  }
+}

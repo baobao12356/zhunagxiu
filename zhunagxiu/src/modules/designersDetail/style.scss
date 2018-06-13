@@ -1,0 +1,418 @@
+body{
+  position: static !important;
+  font-family: "PingFang SC-Medium";
+}
+
+.wrapper{
+  position: absolute !important;
+  width: 100%;
+}
+.bannerBg{
+  width: 100%;
+  background-size: 100% auto !important;
+  height: 420px;
+}
+
+.desginerInfo{
+  color:#999;
+  background: #fff;
+  box-shadow: 0 -4px 8px 0 rgba(0,0,0,0.08),0 4px 8px 0 rgba(0,0,0,0.08);
+  width:670px;
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top:-116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .designerHeaderPic{
+    margin-top: -64px;
+    border: 4px solid #fff;
+  }
+
+  .designerName{
+    font-size: 34px;
+    color: #333;
+    line-height: 34px;
+    font-family: PingFangSC-Regular;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    >:nth-child(1){
+      position: absolute;
+      margin-left: 20px;
+      display: inline-block;
+      top: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      bottom: 0;
+      background-size: 100% 100% !important;
+      width: 68px;
+      height: 24px;
+    }
+  }
+
+
+  .tags{
+    margin-top: 36px;
+    width: 60%;
+    align-self: center;
+    text-align: center;
+    >:nth-child(1){
+      margin-bottom: 22px;
+    }
+    >.tag{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      >span{
+        border-radius: 4px;
+        margin-right: 20px;
+        padding: 4px 12px;
+        border: 1px solid #f1f1f1;
+      }
+      >:last-child{
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .price{
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    width: 592px;
+    border-bottom: 1px solid #f1f1f1;
+    justify-content: space-around;
+    >div{
+      >:nth-child(1){
+        color: #333;
+        font-family: "PingFang SC-Medium";
+        font-size: 30px;
+        margin-bottom: 16px;
+      }
+      >:nth-child(2){
+        margin-bottom: 34px;
+      }
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .company{
+    width: 592px;
+    margin-top: 38px;
+    >:nth-child(1){
+      >:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @at-root .noBtn:after{
+          content: '' !important;
+          background: transparent !important;
+        }
+        &:after{
+          content: '';
+          width: 26px;
+          height: 26px;
+          background: url("./img/more.png");
+          background-size: 100% !important;
+
+        }
+      }
+    }
+    >div{
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+      >:nth-child(2){
+        margin-left: 16px;
+        color: #333;
+        font-family: PingFangSC-Regular;
+      }
+    }
+    >:nth-child(2){
+      margin-top: 34px;
+      margin-bottom: 42px;
+      >:nth-child(2){
+        >span{
+          margin-right: 10px;
+
+        }
+
+      }
+    }
+  }
+
+  .btns{
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    >:nth-child(2){
+      width: 178px;
+      height: 64px;
+      font-size: 28px !important;
+    }
+  }
+
+}
+
+.com-concern{
+  border: 1px solid #DFAF7D;
+  box-sizing: border-box;
+  color: #DFAF7D;
+  border-radius: 4px;
+  font-size: 28px;
+  line-height: 64px;
+  width:178px;
+  height: 64px;
+  display: block;
+  text-align: center;
+}
+
+.concerned{
+  border: none !important;
+  color: #666;
+  border-radius: 4px;
+  font-size: 28px;
+  line-height: 64px;
+  width:178px;
+  height: 64px;
+  display: block;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+
+
+.itemsTag{
+  height: 80px;
+  padding-top: 30px;
+  background-color: #fff;
+  z-index: 998;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #666;
+  margin-top: -60px;
+  >div{
+    margin-right: 74px;
+  }
+  >:last-child{
+    margin-right: 0 !important;
+  }
+
+}
+
+.itemBox{
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+  left: 0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0px;
+  }
+
+  .defaultImgs{
+    img{
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    text-align: center;
+    color: #999;
+    >span{
+      margin: 60px;
+      font-size: 30px;
+    }
+  }
+}
+
+
+
+
+.activeItem{
+  font-size: 30px;
+  color: #333;
+  font-family:PingFangSC-Regular;
+
+}
+.activeItem:after{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 4px;
+  background: #333;
+  margin: 16px auto 0;
+}
+
+
+.prices{
+  i{
+    font-size: 24px;
+  }
+  >.activePrice{
+    color: red;
+    margin-right: 10px;
+  }
+  >span:nth-child(2){
+    font-size: 24px;
+    color:#999;
+    text-decoration: line-through;
+  }
+
+}
+
+
+.master{
+  width: 100%;
+
+  >.sliderItem{
+    >.slider{
+
+      background: #fff;
+      overflow: hidden;
+
+      height: 1336px;
+
+      .caseTitle{
+        text-align: center;
+      }
+      .desc{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        >span{
+          margin: 0 5px !important;
+        }
+      }
+    }
+  }
+}
+
+
+.sliderCase{
+  background: #fff;
+  overflow-y: scroll !important;
+  height:1336px;
+}
+
+
+
+
+.nextPage{
+  position: absolute;
+  animation: twinkling 1s infinite ease-in-out;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("./img/down.png");
+  background-size: 100%;
+  bottom: 62px !important;
+  margin: 0 auto;
+  left: 0;
+  right:0;
+}
+@keyframes twinkling{
+  0%{
+    width: 20px;
+    height: 20px;
+  }
+  100%{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.sliderBox{
+  position: relative !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+
+}
+.itemSilder{
+  position: relative;
+  background-position-y: 120px !important;
+  background-size: contain !important;
+}
+.itemSilder-andriod{
+  position: relative;
+  background-position-y: 80px !important;
+  background-size: contain !important;
+}
+.sliderItemBox{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  .caseItems{
+    overflow-y: scroll;
+  }
+.headerFix{
+  height: 100px;
+}
+
+  >div{
+    height: 100vh;
+  }
+  .masterAppointments{
+    font-size: 34px !important;
+    bottom:152px !important;
+    position: absolute;
+    width: 280px;
+    height:88px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+
+.onTop{
+  position: fixed !important;
+  margin-top: 0 !important;
+  top:100px !important;
+}
+
+.notApp{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  top:0px !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.isIOS{
+  padding-top: 20px;
+}
+
+
+.moreInfo{
+  width: 100%;
+  text-align: center;
+  display: block !important;
+}
+
+.more{
+  display: none;
+}
+
+
+.dis{
+  display: none !important;
+}

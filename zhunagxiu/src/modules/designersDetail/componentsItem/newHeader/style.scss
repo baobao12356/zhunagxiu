@@ -1,0 +1,43 @@
+.gradientHeader{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 999;
+  background-color:rgba(255,255,255,0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .headerBtns{
+    display: flex;
+    flex-direction: row;
+    margin-right: 14px;
+  }
+  .back{
+    margin-left: 14px;
+    background: url("./img/back_11.png") no-repeat;
+  }
+  .share{
+    background: url("./img/share_11.png") no-repeat;
+  }
+  .back,.share{
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+  }
+
+  .appoint{
+      color: #DFAF7D;
+      line-height: 60px;
+      margin-right: 20px;
+      opacity: 0;
+      font-size: 30px;
+  }
+
+
+}
+
+.gradient{
+  background:linear-gradient(-180deg, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.00) 100%);
+}

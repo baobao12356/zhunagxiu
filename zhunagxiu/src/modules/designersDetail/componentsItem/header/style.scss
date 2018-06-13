@@ -1,0 +1,153 @@
+.header_1{
+  z-index: 999;
+  position: fixed;
+  top:0;
+  height: 88px;
+  width:100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .share{
+      width: 60px;
+      height: 60px;
+      background: url("./img/share_1.png");
+      background-size: 100% 100%;
+      margin-right: 20px;
+    }
+  }
+  .desginerBack{
+    display: flex;
+    align-items: center;
+    .back{
+      width: 60px;
+      height: 60px;
+      background: url("./img/back_2.png");
+      background-size: 100% 100%;
+      margin-left: 10px;
+    }
+  }
+
+  .designerPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  >div{
+    width: 30%;
+    height: 100%;
+  }
+}
+
+
+.header_2{
+  z-index: 999;
+  background: #fff;
+  position: fixed;
+  top:0;
+  height: 88px;
+  width:100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .designerPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px !important;
+  }
+  >div{
+    width: 30%;
+  }
+  .btn{
+    >div{
+      float: right;
+      margin-right: 20px;
+      background: #DFAF7D;
+      color: #fff;
+      width: 150px;
+      height: 52px;
+      text-align: center;
+      line-height: 56px;
+      font-size: 28px;
+      border-radius: 4px;
+    }
+  }
+  .desginerBack{
+    margin-left: 0px;
+    .back{
+      width: 60px;
+      height: 60px;
+      background: url("./img/back_2.png");
+      background-size: 100% 100%;
+    }
+
+  }
+}
+
+
+.header_3{
+  z-index: 999;
+  background: #fff;
+  position: fixed;
+  top:0;
+  height: 88px;
+  width:100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .designerPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px !important;
+  }
+  >div{
+    width: 30%;
+  }
+  .btn{
+    >div{
+      float: right;
+      margin-right: 20px;
+      width: 150px;
+      height: 52px;
+      text-align: center;
+      line-height: 56px;
+      font-size: 28px;
+      border-radius: 4px;
+    }
+  }
+  .desginerBack{
+    margin-left: 0px;
+    .back{
+      width: 60px;
+      height: 60px;
+      background: url("./img/back_2.png");
+      background-size: 100% 100%;
+    }
+
+  }
+}
+
+
+
+
+
